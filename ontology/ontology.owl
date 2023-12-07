@@ -144,10 +144,91 @@
     
 
 
-    <!-- http://metadata.com#hallucinationGeneratedBy -->
+    <!-- https://w3id.org/halo/hallucination#contextInconsistencyOn -->
 
 
-    <owl:ObjectProperty rdf:about="http://metadata.com#hallucinationGeneratedBy">
+    <owl:ObjectProperty rdf:about="https://w3id.org/halo/hallucination#contextInconsistencyOn">
+        <rdfs:domain rdf:resource="http://w3id.org/halo/hallucination#contextInconsistency"/>
+        <rdfs:range rdf:resource="https://schema.org/DefinedTerm"/>
+        <rdfs:range rdf:resource="https://schema.org/ScholarlyArticle"/>
+        <rdfs:range rdf:resource="https://schema.org/SolveMathAction"/>
+        <rdfs:range rdf:resource="https://schema.org/WebSite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/halo/hallucination#factualFabricateOn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/halo/hallucination#factualFabricateOn">
+        <rdfs:domain rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="https://schema.org/Article"/>
+        <rdfs:range rdf:resource="https://schema.org/Book"/>
+        <rdfs:range rdf:resource="https://schema.org/Date"/>
+        <rdfs:range rdf:resource="https://schema.org/DefinedTerm"/>
+        <rdfs:range rdf:resource="https://schema.org/Movie"/>
+        <rdfs:range rdf:resource="https://schema.org/ScholarlyArticle"/>
+        <rdfs:range rdf:resource="https://schema.org/ShortStory"/>
+        <rdfs:range rdf:resource="https://schema.org/actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/halo/hallucination#factualInconsistencyOn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/halo/hallucination#factualInconsistencyOn">
+        <rdfs:domain rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="https://schema.org/Article"/>
+        <rdfs:range rdf:resource="https://schema.org/Book"/>
+        <rdfs:range rdf:resource="https://schema.org/Date"/>
+        <rdfs:range rdf:resource="https://schema.org/DefinedTerm"/>
+        <rdfs:range rdf:resource="https://schema.org/Movie"/>
+        <rdfs:range rdf:resource="https://schema.org/ScholarlyArticle"/>
+        <rdfs:range rdf:resource="https://schema.org/ShortStory"/>
+        <rdfs:range rdf:resource="https://schema.org/actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/halo/hallucination#instructionInconsistency -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/halo/hallucination#instructionInconsistency">
+        <rdfs:domain rdf:resource="http://w3id.org/halo/hallucination#instructionInconsistency"/>
+        <rdfs:range rdf:resource="https://schema.org/WebSite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/halo/hallucination#logicalInconsistencyOn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/halo/hallucination#logicalInconsistencyOn">
+        <rdfs:domain rdf:resource="https://schema.org/DefinedTerm"/>
+        <rdfs:range rdf:resource="https://schema.org/Number"/>
+        <rdfs:range rdf:resource="https://schema.org/SolveMathAction"/>
+        <rdfs:range rdf:resource="https://schema.org/character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/halo/metadata#associatedWithAnswer -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/halo/metadata#associatedWithAnswer">
+        <rdfs:domain rdf:resource="http://w3id.org/halo/metadata#prompts"/>
+        <rdfs:range rdf:resource="http://w3id.org/halo/metadata#answers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/halo/metadata#hallucinationGeneratedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/halo/metadata#hallucinationGeneratedBy">
         <rdfs:domain rdf:resource="http://w3id.org/halo/hallucination#contextInconsistency"/>
         <rdfs:domain rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
         <rdfs:domain rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
@@ -161,104 +242,21 @@
     
 
 
-    <!-- http://metadata.com#wasAskedBy -->
+    <!-- https://w3id.org/halo/metadata#isGeneratedBy -->
 
 
-    <owl:ObjectProperty rdf:about="http://metadata.com#wasAskedBy">
-        <rdfs:domain rdf:resource="http://w3id.org/halo/metadata#prompts"/>
-        <rdfs:range rdf:resource="http://w3id.org/halo/metadata#largeLanguageModel"/>
-        <rdfs:label>was asked by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://schema.org/contextInconsistencyOn -->
-
-
-    <owl:ObjectProperty rdf:about="https://schema.org/contextInconsistencyOn">
-        <rdfs:domain rdf:resource="http://w3id.org/halo/hallucination#contextInconsistency"/>
-        <rdfs:range rdf:resource="https://schema.org/DefinedTerm"/>
-        <rdfs:range rdf:resource="https://schema.org/ScholarlyArticle"/>
-        <rdfs:range rdf:resource="https://schema.org/SolveMathAction"/>
-        <rdfs:range rdf:resource="https://schema.org/WebSite"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://schema.org/factualFabricateOn -->
-
-
-    <owl:ObjectProperty rdf:about="https://schema.org/factualFabricateOn">
-        <rdfs:domain rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:range rdf:resource="https://schema.org/Article"/>
-        <rdfs:range rdf:resource="https://schema.org/Book"/>
-        <rdfs:range rdf:resource="https://schema.org/Date"/>
-        <rdfs:range rdf:resource="https://schema.org/DefinedTerm"/>
-        <rdfs:range rdf:resource="https://schema.org/Movie"/>
-        <rdfs:range rdf:resource="https://schema.org/ScholarlyArticle"/>
-        <rdfs:range rdf:resource="https://schema.org/ShortStory"/>
-        <rdfs:range rdf:resource="https://schema.org/actor"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://schema.org/factualInconsistencyOn -->
-
-
-    <owl:ObjectProperty rdf:about="https://schema.org/factualInconsistencyOn">
-        <rdfs:domain rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:range rdf:resource="https://schema.org/Article"/>
-        <rdfs:range rdf:resource="https://schema.org/Book"/>
-        <rdfs:range rdf:resource="https://schema.org/Date"/>
-        <rdfs:range rdf:resource="https://schema.org/DefinedTerm"/>
-        <rdfs:range rdf:resource="https://schema.org/Movie"/>
-        <rdfs:range rdf:resource="https://schema.org/ScholarlyArticle"/>
-        <rdfs:range rdf:resource="https://schema.org/ShortStory"/>
-        <rdfs:range rdf:resource="https://schema.org/actor"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://schema.org/instructionInconsistency -->
-
-
-    <owl:ObjectProperty rdf:about="https://schema.org/instructionInconsistency">
-        <rdfs:domain rdf:resource="http://w3id.org/halo/hallucination#instructionInconsistency"/>
-        <rdfs:range rdf:resource="https://schema.org/WebSite"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://schema.org/logicalInconsistencyOn -->
-
-
-    <owl:ObjectProperty rdf:about="https://schema.org/logicalInconsistencyOn">
-        <rdfs:domain rdf:resource="https://schema.org/DefinedTerm"/>
-        <rdfs:range rdf:resource="https://schema.org/Number"/>
-        <rdfs:range rdf:resource="https://schema.org/SolveMathAction"/>
-        <rdfs:range rdf:resource="https://schema.org/character"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/halo#associatedWithAnswer -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/halo#associatedWithAnswer">
-        <rdfs:domain rdf:resource="http://w3id.org/halo/metadata#prompts"/>
-        <rdfs:range rdf:resource="http://w3id.org/halo/metadata#answers"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/halo#isGeneratedBy -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/halo#isGeneratedBy">
+    <owl:ObjectProperty rdf:about="https://w3id.org/halo/metadata#isGeneratedBy">
         <rdfs:domain rdf:resource="http://w3id.org/halo/metadata#answers"/>
         <rdfs:range rdf:resource="http://w3id.org/halo/metadata#largeLanguageModel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/halo/metadata#wasAskedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/halo/metadata#wasAskedBy">
+        <rdfs:label>was asked by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -275,21 +273,21 @@
     
 
 
-    <!-- http://metadata.com#aiName -->
+    <!-- https://w3id.org/halo/metadata#aiName -->
 
 
-    <owl:DatatypeProperty rdf:about="http://metadata.com#aiName">
-        <rdfs:domain rdf:resource="http://w3id.org/halo/metadata/generativeAI"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/halo/metadata#aiName">
+        <rdfs:domain rdf:resource="http://w3id.org/halo/metadata#generativeAI"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>ai name</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://metadata.com#collectedOn -->
+    <!-- https://w3id.org/halo/metadata#collectedOn -->
 
 
-    <owl:DatatypeProperty rdf:about="http://metadata.com#collectedOn">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/halo/metadata#collectedOn">
         <rdfs:domain rdf:resource="http://w3id.org/halo/metadata#prompts"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:label>collected on</rdfs:label>
@@ -297,21 +295,21 @@
     
 
 
-    <!-- http://metadata.com#domain -->
+    <!-- https://w3id.org/halo/metadata#domain -->
 
 
-    <owl:DatatypeProperty rdf:about="http://metadata.com#domain">
-        <rdfs:domain rdf:resource="http://w3id.org/halo/metadata/generativeAI"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/halo/metadata#domain">
+        <rdfs:domain rdf:resource="http://w3id.org/halo/metadata#generativeAI"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>domain</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://metadata.com#hasAnswerDate -->
+    <!-- https://w3id.org/halo/metadata#hasAnswerDate -->
 
 
-    <owl:DatatypeProperty rdf:about="http://metadata.com#hasAnswerDate">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/halo/metadata#hasAnswerDate">
         <rdfs:domain rdf:resource="http://w3id.org/halo/metadata#answers"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:label>has answer date</rdfs:label>
@@ -319,10 +317,10 @@
     
 
 
-    <!-- http://metadata.com#hasAnswerID -->
+    <!-- https://w3id.org/halo/metadata#hasAnswerID -->
 
 
-    <owl:DatatypeProperty rdf:about="http://metadata.com#hasAnswerID">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/halo/metadata#hasAnswerID">
         <rdfs:domain rdf:resource="http://w3id.org/halo/metadata#answers"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:label>has answer i d</rdfs:label>
@@ -330,10 +328,10 @@
     
 
 
-    <!-- http://metadata.com#hasPromptId -->
+    <!-- https://w3id.org/halo/metadata#hasPromptId -->
 
 
-    <owl:DatatypeProperty rdf:about="http://metadata.com#hasPromptId">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/halo/metadata#hasPromptId">
         <rdfs:domain rdf:resource="http://w3id.org/halo/metadata#prompts"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:label>has prompt id</rdfs:label>
@@ -341,10 +339,10 @@
     
 
 
-    <!-- http://metadata.com#hasSource -->
+    <!-- https://w3id.org/halo/metadata#hasSource -->
 
 
-    <owl:DatatypeProperty rdf:about="http://metadata.com#hasSource">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/halo/metadata#hasSource">
         <rdfs:domain rdf:resource="http://w3id.org/halo/metadata#prompts"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>has source</rdfs:label>
@@ -352,10 +350,10 @@
     
 
 
-    <!-- http://metadata.com#model -->
+    <!-- https://w3id.org/halo/metadata#model -->
 
 
-    <owl:DatatypeProperty rdf:about="http://metadata.com#model">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/halo/metadata#model">
         <rdfs:domain rdf:resource="http://w3id.org/halo/metadata#largeLanguageModel"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>model</rdfs:label>
@@ -363,10 +361,10 @@
     
 
 
-    <!-- http://metadata.com#modelName -->
+    <!-- https://w3id.org/halo/metadata#modelName -->
 
 
-    <owl:DatatypeProperty rdf:about="http://metadata.com#modelName">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/halo/metadata#modelName">
         <rdfs:domain rdf:resource="http://w3id.org/halo/metadata#largeLanguageModel"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>model name</rdfs:label>
@@ -374,11 +372,11 @@
     
 
 
-    <!-- http://metadata.com#type -->
+    <!-- https://w3id.org/halo/metadata#type -->
 
 
-    <owl:DatatypeProperty rdf:about="http://metadata.com#type">
-        <rdfs:domain rdf:resource="http://w3id.org/halo/metadata/generativeAI"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/halo/metadata#type">
+        <rdfs:domain rdf:resource="http://w3id.org/halo/metadata#generativeAI"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>type</rdfs:label>
     </owl:DatatypeProperty>
@@ -485,11 +483,20 @@
     
 
 
+    <!-- http://w3id.org/halo/metadata#generativeAI -->
+
+
+    <owl:Class rdf:about="http://w3id.org/halo/metadata#generativeAI">
+        <rdfs:label>generative A I</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/halo/metadata#largeLanguageModel -->
 
 
     <owl:Class rdf:about="http://w3id.org/halo/metadata#largeLanguageModel">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/halo/metadata/generativeAI"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/halo/metadata#generativeAI"/>
         <rdfs:label>large Language Model</rdfs:label>
     </owl:Class>
     
@@ -500,15 +507,6 @@
 
     <owl:Class rdf:about="http://w3id.org/halo/metadata#prompts">
         <rdfs:label>prompts</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/halo/metadata/generativeAI -->
-
-
-    <owl:Class rdf:about="http://w3id.org/halo/metadata/generativeAI">
-        <rdfs:label>generative A I</rdfs:label>
     </owl:Class>
     
 
@@ -618,8 +616,8 @@
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://w3id.org/halo/hallucination#LLMsHallucination"/>
             <rdf:Description rdf:about="http://w3id.org/halo/metadata#answers"/>
+            <rdf:Description rdf:about="http://w3id.org/halo/metadata#generativeAI"/>
             <rdf:Description rdf:about="http://w3id.org/halo/metadata#prompts"/>
-            <rdf:Description rdf:about="http://w3id.org/halo/metadata/generativeAI"/>
             <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
             <rdf:Description rdf:about="https://schema.org/Article"/>
             <rdf:Description rdf:about="https://schema.org/Book"/>
