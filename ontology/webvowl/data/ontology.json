@@ -1,0 +1,1305 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://w3id.org/halo/metadata", "http://www.w3.org/2000/01/rdf-schema", "http://metadata.com", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/example", "http://w3id.org/halo/hallucination" ],
+    "title" : {
+      "en" : "HALO: An Ontology for Representing Hallucinations in Generative Models"
+    },
+    "iri" : "https://w3id.org/example#",
+    "version" : "0.0.1",
+    "author" : [ "Navapat Nananukul" ],
+    "description" : {
+      "en" : "-"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Navapat Nananukul",
+        "type" : "label"
+      } ],
+      "createdWith" : [ {
+        "identifier" : "createdWith",
+        "language" : "undefined",
+        "value" : "https://chowlk.linkeddata.es/",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "choosenprefix",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.0.1",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/example#",
+        "type" : "iri"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "HALO: An Ontology for Representing Hallucinations in Generative Models",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://w3id.org/halo/hallucination#factualityHallucination",
+    "baseIri" : "http://w3id.org/halo/hallucination",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "factualityHallucination",
+      "undefined" : "factuality Hallucination"
+    },
+    "subClasses" : [ "11", "12" ],
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://w3id.org/halo/hallucination#LLMsHallucination",
+    "baseIri" : "http://w3id.org/halo/hallucination",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LLMsHallucination",
+      "undefined" : "L L Ms Hallucination"
+    },
+    "subClasses" : [ "19", "9" ],
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://w3id.org/halo/metadata/generativeAI",
+    "baseIri" : "http://w3id.org/halo/metadata",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "generativeAI",
+      "undefined" : "generative A I"
+    },
+    "subClasses" : [ "17" ],
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "21",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://w3id.org/halo/hallucination#instructionInconsistency",
+    "baseIri" : "http://w3id.org/halo/hallucination",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "instructionInconsistency",
+      "undefined" : "instruction Inconsistency"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/example#instructionInconsistency_13_17",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "instructionInconsistency_13_17"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#instructionInconsistency_18_27",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "instructionInconsistency_18_27"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#instructionInconsistency_15_21",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "instructionInconsistency_15_21"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "31",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://w3id.org/halo/metadata#prompts",
+    "baseIri" : "http://w3id.org/halo/metadata",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "prompts",
+      "undefined" : "prompts"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/example#prompt_01",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "prompt_01"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://w3id.org/halo/hallucination#factualFabrication",
+    "baseIri" : "http://w3id.org/halo/hallucination",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "factualFabrication",
+      "undefined" : "Factual Fabrication"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/example#factualfabrication_11_14",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_11_14"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_28_50",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_28_50"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_15_19",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_15_19"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_18_26",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_18_26"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_16_23",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_16_23"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_32_56",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_32_56"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_32_57",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_32_57"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_30_54",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_30_54"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_16_22",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_16_22"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_21_32",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_21_32"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_21_33",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_21_33"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_01_02",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_01_02"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_01_01",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_01_01"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_05_06",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_05_06"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_07_09",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_07_09"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_03_03",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_03_03"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_05_05",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_05_05"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_05_07",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_05_07"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_28_49",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_28_49"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_28_48",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_28_48"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_26_44",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_26_44"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_08_11",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_08_11"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_10_13",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_10_13"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_29_53",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_29_53"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_29_52",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_29_52"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_29_51",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_29_51"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_12_16",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_12_16"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_14_18",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_14_18"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_15_21",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_15_21"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_15_20",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_15_20"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_33_59",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_33_59"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_33_58",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_33_58"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_20_30",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_20_30"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_04_04",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_04_04"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_25_42",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_25_42"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_25_41",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_25_41"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_27_47",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_27_47"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_27_45",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_27_45"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_07_10",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_07_10"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_27_46",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_27_46"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualfabrication_09_12",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualfabrication_09_12"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "12",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://w3id.org/halo/metadata#largeLanguageModel",
+    "baseIri" : "http://w3id.org/halo/metadata",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "largeLanguageModel",
+      "undefined" : "large Language Model"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/example#BARD",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "BARD"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#Claude",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "Claude"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#GPT-3.5",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "GPT-3.5"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "17",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://w3id.org/halo/hallucination#logicalInconsistency",
+    "baseIri" : "http://w3id.org/halo/hallucination",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "logicalInconsistency",
+      "undefined" : "logical Inconsistency"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/example#logicalInconsistency_24_39",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "logicalInconsistency_24_39"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#logicalInconsistency_19_28",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "logicalInconsistency_19_28"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#logicalInconsistency_24_38",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "logicalInconsistency_24_38"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#logicalInconsistency_22_34",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "logicalInconsistency_22_34"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#logicalInconsistency_24_40",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "logicalInconsistency_24_40"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#logicalInconsistency_26_43",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "logicalInconsistency_26_43"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "29",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://w3id.org/halo/metadata#answers",
+    "baseIri" : "http://w3id.org/halo/metadata",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "answers",
+      "undefined" : "answers"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/example#answer_02",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "answer_02"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#answer_01",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "answer_01"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://w3id.org/halo/hallucination#contextInconsistency",
+    "baseIri" : "http://w3id.org/halo/hallucination",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "contextInconsistency",
+      "undefined" : "context Inconsistency"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/example#contextInconsistency_01_02",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "contextInconsistency_01_02"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#contextInconsistency_04_04",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "contextInconsistency_04_04"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#contextInconsistency_24_40",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "contextInconsistency_24_40"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#contextInconsistency_13_17",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "contextInconsistency_13_17"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#contextInconsistency_30_54",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "contextInconsistency_30_54"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#contextInconsistency_24_39",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "contextInconsistency_24_39"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#contextInconsistency_18_27",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "contextInconsistency_18_27"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#contextInconsistency_23_36",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "contextInconsistency_23_36"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#contextInconsistency_08_11",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "contextInconsistency_08_11"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#contextInconsistency_10_13",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "contextInconsistency_10_13"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#contextInconsistency_24_38",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "contextInconsistency_24_38"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#contextInconsistency_18_26",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "contextInconsistency_18_26"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "25",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://w3id.org/halo/hallucination#faithfulnessHallucination",
+    "baseIri" : "http://w3id.org/halo/hallucination",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "faithfulnessHallucination",
+      "undefined" : "faithfulness Hallucination"
+    },
+    "subClasses" : [ "31", "29", "25" ],
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://w3id.org/halo/hallucination#factualInconsistency",
+    "baseIri" : "http://w3id.org/halo/hallucination",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "factualInconsistency",
+      "undefined" : "factual Inconsistency"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/example#factualInconsistency_24_40",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_24_40"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_26_44",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_26_44"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_05_05",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_05_05"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_29_53",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_29_53"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_07_09",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_07_09"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_05_06",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_05_06"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_05_07",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_05_07"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_29_51",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_29_51"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_29_52",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_29_52"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_21_32",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_21_32"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_08_11",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_08_11"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_01_02",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_01_02"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_28_49",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_28_49"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_01_01",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_01_01"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_23_37",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_23_37"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_23_36",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_23_36"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_28_48",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_28_48"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_21_33",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_21_33"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_15_21",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_15_21"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_17_24",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_17_24"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_15_20",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_15_20"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_14_18",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_14_18"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_10_13",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_10_13"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_12_16",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_12_16"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_12_15",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_12_15"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_31_55",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_31_55"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_17_25",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_17_25"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_25_41",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_25_41"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_27_45",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_27_45"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_25_42",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_25_42"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_04_04",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_04_04"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_06_08",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_06_08"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_28_50",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_28_50"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_20_30",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_20_30"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_09_12",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_09_12"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_24_38",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_24_38"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_07_10",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_07_10"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_24_39",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_24_39"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_27_47",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_27_47"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_27_46",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_27_46"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_22_35",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_22_35"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_22_34",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_22_34"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_16_23",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_16_23"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_16_22",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_16_22"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_15_19",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_15_19"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_11_14",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_11_14"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_32_56",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_32_56"
+      }
+    }, {
+      "iri" : "https://w3id.org/example#factualInconsistency_30_54",
+      "baseIri" : "https://w3id.org/example",
+      "labels" : {
+        "IRI-based" : "factualInconsistency_30_54"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "9" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://metadata.com#hasAnswerID",
+    "baseIri" : "http://metadata.com",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasAnswerID",
+      "undefined" : "has answer i d"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://metadata.com#hasAnswerDate",
+    "baseIri" : "http://metadata.com",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasAnswerDate",
+      "undefined" : "has answer date"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://metadata.com#collectedOn",
+    "baseIri" : "http://metadata.com",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "collectedOn",
+      "undefined" : "collected on"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/example#associatedWithAnswer",
+    "baseIri" : "https://w3id.org/example",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "associatedWithAnswer"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://metadata.com#type",
+    "baseIri" : "http://metadata.com",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "type",
+      "undefined" : "type"
+    },
+    "domain" : "14",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://metadata.com#modelName",
+    "baseIri" : "http://metadata.com",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "modelName",
+      "undefined" : "model name"
+    },
+    "domain" : "17",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://metadata.com#wasAskedBy",
+    "baseIri" : "http://metadata.com",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "wasAskedBy",
+      "undefined" : "was asked by"
+    },
+    "domain" : "21",
+    "attributes" : [ "external", "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://metadata.com#hallucinationGeneratedBy",
+    "baseIri" : "http://metadata.com",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hallucinationGeneratedBy",
+      "undefined" : "hallucination generated by"
+    },
+    "domain" : "21",
+    "attributes" : [ "external", "object" ],
+    "id" : "22"
+  }, {
+    "range" : "14",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
+  }, {
+    "range" : "19",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "range" : "10",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "19",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "range" : "19",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "9",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
+  }, {
+    "range" : "9",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://metadata.com#domain",
+    "baseIri" : "http://metadata.com",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "domain",
+      "undefined" : "domain"
+    },
+    "domain" : "14",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/example#isGeneratedBy",
+    "baseIri" : "https://w3id.org/example",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "isGeneratedBy"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://metadata.com#model",
+    "baseIri" : "http://metadata.com",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "model",
+      "undefined" : "model"
+    },
+    "domain" : "17",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://metadata.com#aiName",
+    "baseIri" : "http://metadata.com",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "aiName",
+      "undefined" : "ai name"
+    },
+    "domain" : "14",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://metadata.com#hasPromptId",
+    "baseIri" : "http://metadata.com",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "hasPromptId",
+      "undefined" : "has prompt id"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://metadata.com#hasSource",
+    "baseIri" : "http://metadata.com",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "hasSource",
+      "undefined" : "has source"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "44"
+  } ]
+}
