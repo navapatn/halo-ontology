@@ -92,6 +92,8 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://metadata.com#wasAskedBy
 <http://metadata.com#wasAskedBy> rdf:type owl:ObjectProperty ;
+                                 rdfs:domain <http://w3id.org/halo/metadata#prompts> ;
+                                 rdfs:range <http://w3id.org/halo/metadata#largeLanguageModel> ;
                                  rdfs:label "was asked by" .
 
 

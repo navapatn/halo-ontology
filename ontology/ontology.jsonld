@@ -193,8 +193,14 @@
 }, {
   "@id" : "http://metadata.com#wasAskedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/halo/metadata#prompts"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "was asked by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/halo/metadata#largeLanguageModel"
   } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/creator",

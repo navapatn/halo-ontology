@@ -85,6 +85,8 @@
 # 
 # http://metadata.com#wasAskedBy
 <http://metadata.com#wasAskedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://metadata.com#wasAskedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/halo/metadata#prompts> .
+<http://metadata.com#wasAskedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/halo/metadata#largeLanguageModel> .
 <http://metadata.com#wasAskedBy> <http://www.w3.org/2000/01/rdf-schema#label> "was asked by" .
 # 
 # https://schema.org/contextInconsistencyOn
