@@ -1,21 +1,21 @@
-@prefix : <https://w3id.org/example#> .
+@prefix : <https://w3id.org/halo#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/example#> .
+@base <https://w3id.org/halo#> .
 
-<https://w3id.org/example#> rdf:type owl:Ontology ;
-                             owl:versionIRI <https://w3id.org/example#> ;
-                             <http://purl.org/dc/elements/1.1/creator> "Navapat Nananukul" ;
-                             <http://purl.org/dc/elements/1.1/description> "-"@en ;
-                             <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> ;
-                             <http://purl.org/dc/elements/1.1/title> "HALO: An Ontology for Representing Hallucinations in Generative Models"@en ;
-                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "choosenprefix" ;
-                             <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/example#> ;
-                             owl:versionInfo "0.0.1" ;
-                             <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+<https://w3id.org/halo#> rdf:type owl:Ontology ;
+                          owl:versionIRI <https://w3id.org/halo#> ;
+                          <http://purl.org/dc/elements/1.1/creator> "Navapat Nananukul" ;
+                          <http://purl.org/dc/elements/1.1/description> "-"@en ;
+                          <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                          <http://purl.org/dc/elements/1.1/title> "HALO: An Ontology for Representing Hallucinations in Generative Models"@en ;
+                          <http://purl.org/vocab/vann/preferredNamespacePrefix> "choosenprefix" ;
+                          <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/halo#> ;
+                          owl:versionInfo "0.0.1" ;
+                          <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
 
 #################################################################
 #    Annotation properties
@@ -53,6 +53,14 @@ owl:versionIRI rdf:type owl:AnnotationProperty .
 owl:versionInfo rdf:type owl:AnnotationProperty .
 
 
+###  https://w3id.org/example#associatedWithAnswer
+<https://w3id.org/example#associatedWithAnswer> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/example#isGeneratedBy
+<https://w3id.org/example#isGeneratedBy> rdf:type owl:AnnotationProperty .
+
+
 ###  https://w3id.org/mod#createdWith
 <https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
 
@@ -79,13 +87,13 @@ xsd:date rdf:type rdfs:Datatype .
                                  rdfs:label "was asked by" .
 
 
-###  https://w3id.org/example#associatedWithAnswer
+###  https://w3id.org/halo#associatedWithAnswer
 :associatedWithAnswer rdf:type owl:ObjectProperty ;
                       rdfs:domain <http://w3id.org/halo/metadata#prompts> ;
                       rdfs:range <http://w3id.org/halo/metadata#answers> .
 
 
-###  https://w3id.org/example#isGeneratedBy
+###  https://w3id.org/halo#isGeneratedBy
 :isGeneratedBy rdf:type owl:ObjectProperty ;
                rdfs:domain <http://w3id.org/halo/metadata#answers> ;
                rdfs:range <http://w3id.org/halo/metadata#largeLanguageModel> .
@@ -241,1227 +249,1227 @@ xsd:date rdf:type rdfs:Datatype .
 #    Individuals
 #################################################################
 
-###  https://w3id.org/example#BARD
+###  https://w3id.org/halo#BARD
 :BARD rdf:type owl:NamedIndividual ,
                <http://w3id.org/halo/metadata#largeLanguageModel> .
 
 
-###  https://w3id.org/example#Claude
+###  https://w3id.org/halo#Claude
 :Claude rdf:type owl:NamedIndividual ,
                  <http://w3id.org/halo/metadata#largeLanguageModel> .
 
 
-###  https://w3id.org/example#GPT-3.5
+###  https://w3id.org/halo#GPT-3.5
 :GPT-3.5 rdf:type owl:NamedIndividual ,
                   <http://w3id.org/halo/metadata#largeLanguageModel> .
 
 
-###  https://w3id.org/example#answer_01
+###  https://w3id.org/halo#answer_01
 :answer_01 rdf:type owl:NamedIndividual ,
                     <http://w3id.org/halo/metadata#answers> ;
-           :isGeneratedBy :GPT-3.5 .
+           <https://w3id.org/example#isGeneratedBy> :GPT-3.5 .
 
 
-###  https://w3id.org/example#answer_010
+###  https://w3id.org/halo#answer_010
 :answer_010 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :Claude .
+            <https://w3id.org/example#isGeneratedBy> :Claude .
 
 
-###  https://w3id.org/example#answer_011
+###  https://w3id.org/halo#answer_011
 :answer_011 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :BARD .
+            <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_012
+###  https://w3id.org/halo#answer_012
 :answer_012 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :BARD .
+            <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_013
+###  https://w3id.org/halo#answer_013
 :answer_013 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :Claude .
+            <https://w3id.org/example#isGeneratedBy> :Claude .
 
 
-###  https://w3id.org/example#answer_014
+###  https://w3id.org/halo#answer_014
 :answer_014 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :BARD .
+            <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_015
+###  https://w3id.org/halo#answer_015
 :answer_015 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :GPT-3.5 .
+            <https://w3id.org/example#isGeneratedBy> :GPT-3.5 .
 
 
-###  https://w3id.org/example#answer_016
+###  https://w3id.org/halo#answer_016
 :answer_016 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :BARD .
+            <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_017
+###  https://w3id.org/halo#answer_017
 :answer_017 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :BARD .
+            <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_018
+###  https://w3id.org/halo#answer_018
 :answer_018 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :BARD .
+            <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_019
+###  https://w3id.org/halo#answer_019
 :answer_019 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :GPT-3.5 .
+            <https://w3id.org/example#isGeneratedBy> :GPT-3.5 .
 
 
-###  https://w3id.org/example#answer_02
+###  https://w3id.org/halo#answer_02
 :answer_02 rdf:type owl:NamedIndividual ,
                     <http://w3id.org/halo/metadata#answers> ;
-           :isGeneratedBy :Claude .
+           <https://w3id.org/example#isGeneratedBy> :Claude .
 
 
-###  https://w3id.org/example#answer_020
+###  https://w3id.org/halo#answer_020
 :answer_020 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :BARD .
+            <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_021
+###  https://w3id.org/halo#answer_021
 :answer_021 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :Claude .
+            <https://w3id.org/example#isGeneratedBy> :Claude .
 
 
-###  https://w3id.org/example#answer_022
+###  https://w3id.org/halo#answer_022
 :answer_022 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :BARD .
+            <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_023
+###  https://w3id.org/halo#answer_023
 :answer_023 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :Claude .
+            <https://w3id.org/example#isGeneratedBy> :Claude .
 
 
-###  https://w3id.org/example#answer_024
+###  https://w3id.org/halo#answer_024
 :answer_024 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :GPT-3.5 .
+            <https://w3id.org/example#isGeneratedBy> :GPT-3.5 .
 
 
-###  https://w3id.org/example#answer_025
+###  https://w3id.org/halo#answer_025
 :answer_025 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :Claude .
+            <https://w3id.org/example#isGeneratedBy> :Claude .
 
 
-###  https://w3id.org/example#answer_026
+###  https://w3id.org/halo#answer_026
 :answer_026 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :GPT-3.5 .
+            <https://w3id.org/example#isGeneratedBy> :GPT-3.5 .
 
 
-###  https://w3id.org/example#answer_027
+###  https://w3id.org/halo#answer_027
 :answer_027 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :BARD .
+            <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_028
+###  https://w3id.org/halo#answer_028
 :answer_028 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :GPT-3.5 .
+            <https://w3id.org/example#isGeneratedBy> :GPT-3.5 .
 
 
-###  https://w3id.org/example#answer_029
+###  https://w3id.org/halo#answer_029
 :answer_029 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :GPT-3.5 .
+            <https://w3id.org/example#isGeneratedBy> :GPT-3.5 .
 
 
-###  https://w3id.org/example#answer_03
+###  https://w3id.org/halo#answer_03
 :answer_03 rdf:type owl:NamedIndividual ;
-           :isGeneratedBy :BARD .
+           <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_030
+###  https://w3id.org/halo#answer_030
 :answer_030 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :BARD .
+            <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_031
+###  https://w3id.org/halo#answer_031
 :answer_031 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :Claude .
+            <https://w3id.org/example#isGeneratedBy> :Claude .
 
 
-###  https://w3id.org/example#answer_032
+###  https://w3id.org/halo#answer_032
 :answer_032 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :GPT-3.5 .
+            <https://w3id.org/example#isGeneratedBy> :GPT-3.5 .
 
 
-###  https://w3id.org/example#answer_033
+###  https://w3id.org/halo#answer_033
 :answer_033 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :BARD .
+            <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_034
+###  https://w3id.org/halo#answer_034
 :answer_034 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :GPT-3.5 .
+            <https://w3id.org/example#isGeneratedBy> :GPT-3.5 .
 
 
-###  https://w3id.org/example#answer_035
+###  https://w3id.org/halo#answer_035
 :answer_035 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :Claude .
+            <https://w3id.org/example#isGeneratedBy> :Claude .
 
 
-###  https://w3id.org/example#answer_036
+###  https://w3id.org/halo#answer_036
 :answer_036 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :BARD .
+            <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_037
+###  https://w3id.org/halo#answer_037
 :answer_037 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :Claude .
+            <https://w3id.org/example#isGeneratedBy> :Claude .
 
 
-###  https://w3id.org/example#answer_038
+###  https://w3id.org/halo#answer_038
 :answer_038 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :GPT-3.5 .
+            <https://w3id.org/example#isGeneratedBy> :GPT-3.5 .
 
 
-###  https://w3id.org/example#answer_039
+###  https://w3id.org/halo#answer_039
 :answer_039 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :BARD .
+            <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_04
+###  https://w3id.org/halo#answer_04
 :answer_04 rdf:type owl:NamedIndividual ;
-           :isGeneratedBy :Claude .
+           <https://w3id.org/example#isGeneratedBy> :Claude .
 
 
-###  https://w3id.org/example#answer_040
+###  https://w3id.org/halo#answer_040
 :answer_040 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :Claude .
+            <https://w3id.org/example#isGeneratedBy> :Claude .
 
 
-###  https://w3id.org/example#answer_041
+###  https://w3id.org/halo#answer_041
 :answer_041 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :GPT-3.5 .
+            <https://w3id.org/example#isGeneratedBy> :GPT-3.5 .
 
 
-###  https://w3id.org/example#answer_042
+###  https://w3id.org/halo#answer_042
 :answer_042 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :BARD .
+            <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_043
+###  https://w3id.org/halo#answer_043
 :answer_043 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :GPT-3.5 .
+            <https://w3id.org/example#isGeneratedBy> :GPT-3.5 .
 
 
-###  https://w3id.org/example#answer_044
+###  https://w3id.org/halo#answer_044
 :answer_044 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :BARD .
+            <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_045
+###  https://w3id.org/halo#answer_045
 :answer_045 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :GPT-3.5 .
+            <https://w3id.org/example#isGeneratedBy> :GPT-3.5 .
 
 
-###  https://w3id.org/example#answer_046
+###  https://w3id.org/halo#answer_046
 :answer_046 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :BARD .
+            <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_047
+###  https://w3id.org/halo#answer_047
 :answer_047 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :Claude .
+            <https://w3id.org/example#isGeneratedBy> :Claude .
 
 
-###  https://w3id.org/example#answer_048
+###  https://w3id.org/halo#answer_048
 :answer_048 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :GPT-3.5 .
+            <https://w3id.org/example#isGeneratedBy> :GPT-3.5 .
 
 
-###  https://w3id.org/example#answer_049
+###  https://w3id.org/halo#answer_049
 :answer_049 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :BARD .
+            <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_05
+###  https://w3id.org/halo#answer_05
 :answer_05 rdf:type owl:NamedIndividual ;
-           :isGeneratedBy :GPT-3.5 .
+           <https://w3id.org/example#isGeneratedBy> :GPT-3.5 .
 
 
-###  https://w3id.org/example#answer_050
+###  https://w3id.org/halo#answer_050
 :answer_050 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :Claude .
+            <https://w3id.org/example#isGeneratedBy> :Claude .
 
 
-###  https://w3id.org/example#answer_051
+###  https://w3id.org/halo#answer_051
 :answer_051 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :GPT-3.5 .
+            <https://w3id.org/example#isGeneratedBy> :GPT-3.5 .
 
 
-###  https://w3id.org/example#answer_052
+###  https://w3id.org/halo#answer_052
 :answer_052 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :BARD .
+            <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_053
+###  https://w3id.org/halo#answer_053
 :answer_053 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :Claude .
+            <https://w3id.org/example#isGeneratedBy> :Claude .
 
 
-###  https://w3id.org/example#answer_054
+###  https://w3id.org/halo#answer_054
 :answer_054 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :BARD .
+            <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_055
+###  https://w3id.org/halo#answer_055
 :answer_055 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :BARD .
+            <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_056
+###  https://w3id.org/halo#answer_056
 :answer_056 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :BARD .
+            <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_057
+###  https://w3id.org/halo#answer_057
 :answer_057 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :Claude .
+            <https://w3id.org/example#isGeneratedBy> :Claude .
 
 
-###  https://w3id.org/example#answer_058
+###  https://w3id.org/halo#answer_058
 :answer_058 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :GPT-3.5 .
+            <https://w3id.org/example#isGeneratedBy> :GPT-3.5 .
 
 
-###  https://w3id.org/example#answer_059
+###  https://w3id.org/halo#answer_059
 :answer_059 rdf:type owl:NamedIndividual ;
-            :isGeneratedBy :BARD .
+            <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_06
+###  https://w3id.org/halo#answer_06
 :answer_06 rdf:type owl:NamedIndividual ;
-           :isGeneratedBy :Claude .
+           <https://w3id.org/example#isGeneratedBy> :Claude .
 
 
-###  https://w3id.org/example#answer_07
+###  https://w3id.org/halo#answer_07
 :answer_07 rdf:type owl:NamedIndividual ;
-           :isGeneratedBy :BARD .
+           <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_08
+###  https://w3id.org/halo#answer_08
 :answer_08 rdf:type owl:NamedIndividual ;
-           :isGeneratedBy :BARD .
+           <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#answer_09
+###  https://w3id.org/halo#answer_09
 :answer_09 rdf:type owl:NamedIndividual ;
-           :isGeneratedBy :BARD .
+           <https://w3id.org/example#isGeneratedBy> :BARD .
 
 
-###  https://w3id.org/example#contextInconsistency_01_02
+###  https://w3id.org/halo#contextInconsistency_01_02
 :contextInconsistency_01_02 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#contextInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_02 .
 
 
-###  https://w3id.org/example#contextInconsistency_04_04
+###  https://w3id.org/halo#contextInconsistency_04_04
 :contextInconsistency_04_04 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#contextInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_04 .
 
 
-###  https://w3id.org/example#contextInconsistency_08_11
+###  https://w3id.org/halo#contextInconsistency_08_11
 :contextInconsistency_08_11 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#contextInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_011 .
 
 
-###  https://w3id.org/example#contextInconsistency_10_13
+###  https://w3id.org/halo#contextInconsistency_10_13
 :contextInconsistency_10_13 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#contextInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_013 .
 
 
-###  https://w3id.org/example#contextInconsistency_13_17
+###  https://w3id.org/halo#contextInconsistency_13_17
 :contextInconsistency_13_17 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#contextInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_017 .
 
 
-###  https://w3id.org/example#contextInconsistency_18_26
+###  https://w3id.org/halo#contextInconsistency_18_26
 :contextInconsistency_18_26 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#contextInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_026 .
 
 
-###  https://w3id.org/example#contextInconsistency_18_27
+###  https://w3id.org/halo#contextInconsistency_18_27
 :contextInconsistency_18_27 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#contextInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_027 .
 
 
-###  https://w3id.org/example#contextInconsistency_23_36
+###  https://w3id.org/halo#contextInconsistency_23_36
 :contextInconsistency_23_36 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#contextInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_036 .
 
 
-###  https://w3id.org/example#contextInconsistency_24_38
+###  https://w3id.org/halo#contextInconsistency_24_38
 :contextInconsistency_24_38 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#contextInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_038 .
 
 
-###  https://w3id.org/example#contextInconsistency_24_39
+###  https://w3id.org/halo#contextInconsistency_24_39
 :contextInconsistency_24_39 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#contextInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_039 .
 
 
-###  https://w3id.org/example#contextInconsistency_24_40
+###  https://w3id.org/halo#contextInconsistency_24_40
 :contextInconsistency_24_40 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#contextInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_040 .
 
 
-###  https://w3id.org/example#contextInconsistency_30_54
+###  https://w3id.org/halo#contextInconsistency_30_54
 :contextInconsistency_30_54 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#contextInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_054 .
 
 
-###  https://w3id.org/example#factualInconsistency_01_01
+###  https://w3id.org/halo#factualInconsistency_01_01
 :factualInconsistency_01_01 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_01 .
 
 
-###  https://w3id.org/example#factualInconsistency_01_02
+###  https://w3id.org/halo#factualInconsistency_01_02
 :factualInconsistency_01_02 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_02 .
 
 
-###  https://w3id.org/example#factualInconsistency_03_03
+###  https://w3id.org/halo#factualInconsistency_03_03
 :factualInconsistency_03_03 rdf:type owl:NamedIndividual ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_03 .
 
 
-###  https://w3id.org/example#factualInconsistency_04_04
+###  https://w3id.org/halo#factualInconsistency_04_04
 :factualInconsistency_04_04 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_04 .
 
 
-###  https://w3id.org/example#factualInconsistency_05_05
+###  https://w3id.org/halo#factualInconsistency_05_05
 :factualInconsistency_05_05 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_05 .
 
 
-###  https://w3id.org/example#factualInconsistency_05_06
+###  https://w3id.org/halo#factualInconsistency_05_06
 :factualInconsistency_05_06 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_06 .
 
 
-###  https://w3id.org/example#factualInconsistency_05_07
+###  https://w3id.org/halo#factualInconsistency_05_07
 :factualInconsistency_05_07 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_07 .
 
 
-###  https://w3id.org/example#factualInconsistency_06_08
+###  https://w3id.org/halo#factualInconsistency_06_08
 :factualInconsistency_06_08 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_08 .
 
 
-###  https://w3id.org/example#factualInconsistency_07_09
+###  https://w3id.org/halo#factualInconsistency_07_09
 :factualInconsistency_07_09 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_09 .
 
 
-###  https://w3id.org/example#factualInconsistency_07_10
+###  https://w3id.org/halo#factualInconsistency_07_10
 :factualInconsistency_07_10 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_010 .
 
 
-###  https://w3id.org/example#factualInconsistency_08_11
+###  https://w3id.org/halo#factualInconsistency_08_11
 :factualInconsistency_08_11 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_011 .
 
 
-###  https://w3id.org/example#factualInconsistency_09_12
+###  https://w3id.org/halo#factualInconsistency_09_12
 :factualInconsistency_09_12 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_012 .
 
 
-###  https://w3id.org/example#factualInconsistency_10_13
+###  https://w3id.org/halo#factualInconsistency_10_13
 :factualInconsistency_10_13 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_013 .
 
 
-###  https://w3id.org/example#factualInconsistency_11_14
+###  https://w3id.org/halo#factualInconsistency_11_14
 :factualInconsistency_11_14 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_014 .
 
 
-###  https://w3id.org/example#factualInconsistency_12_15
+###  https://w3id.org/halo#factualInconsistency_12_15
 :factualInconsistency_12_15 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_015 .
 
 
-###  https://w3id.org/example#factualInconsistency_12_16
+###  https://w3id.org/halo#factualInconsistency_12_16
 :factualInconsistency_12_16 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_016 .
 
 
-###  https://w3id.org/example#factualInconsistency_14_18
+###  https://w3id.org/halo#factualInconsistency_14_18
 :factualInconsistency_14_18 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_018 .
 
 
-###  https://w3id.org/example#factualInconsistency_15_19
+###  https://w3id.org/halo#factualInconsistency_15_19
 :factualInconsistency_15_19 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_019 .
 
 
-###  https://w3id.org/example#factualInconsistency_15_20
+###  https://w3id.org/halo#factualInconsistency_15_20
 :factualInconsistency_15_20 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_020 .
 
 
-###  https://w3id.org/example#factualInconsistency_15_21
+###  https://w3id.org/halo#factualInconsistency_15_21
 :factualInconsistency_15_21 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_021 .
 
 
-###  https://w3id.org/example#factualInconsistency_16_22
+###  https://w3id.org/halo#factualInconsistency_16_22
 :factualInconsistency_16_22 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_022 .
 
 
-###  https://w3id.org/example#factualInconsistency_16_23
+###  https://w3id.org/halo#factualInconsistency_16_23
 :factualInconsistency_16_23 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_023 .
 
 
-###  https://w3id.org/example#factualInconsistency_17_24
+###  https://w3id.org/halo#factualInconsistency_17_24
 :factualInconsistency_17_24 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_024 .
 
 
-###  https://w3id.org/example#factualInconsistency_17_25
+###  https://w3id.org/halo#factualInconsistency_17_25
 :factualInconsistency_17_25 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_025 .
 
 
-###  https://w3id.org/example#factualInconsistency_20_30
+###  https://w3id.org/halo#factualInconsistency_20_30
 :factualInconsistency_20_30 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_030 .
 
 
-###  https://w3id.org/example#factualInconsistency_21_32
+###  https://w3id.org/halo#factualInconsistency_21_32
 :factualInconsistency_21_32 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_032 .
 
 
-###  https://w3id.org/example#factualInconsistency_21_33
+###  https://w3id.org/halo#factualInconsistency_21_33
 :factualInconsistency_21_33 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_033 .
 
 
-###  https://w3id.org/example#factualInconsistency_22_34
+###  https://w3id.org/halo#factualInconsistency_22_34
 :factualInconsistency_22_34 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_034 .
 
 
-###  https://w3id.org/example#factualInconsistency_22_35
+###  https://w3id.org/halo#factualInconsistency_22_35
 :factualInconsistency_22_35 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_035 .
 
 
-###  https://w3id.org/example#factualInconsistency_23_36
+###  https://w3id.org/halo#factualInconsistency_23_36
 :factualInconsistency_23_36 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_036 .
 
 
-###  https://w3id.org/example#factualInconsistency_23_37
+###  https://w3id.org/halo#factualInconsistency_23_37
 :factualInconsistency_23_37 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_037 .
 
 
-###  https://w3id.org/example#factualInconsistency_24_38
+###  https://w3id.org/halo#factualInconsistency_24_38
 :factualInconsistency_24_38 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_038 .
 
 
-###  https://w3id.org/example#factualInconsistency_24_39
+###  https://w3id.org/halo#factualInconsistency_24_39
 :factualInconsistency_24_39 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_039 .
 
 
-###  https://w3id.org/example#factualInconsistency_24_40
+###  https://w3id.org/halo#factualInconsistency_24_40
 :factualInconsistency_24_40 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_040 .
 
 
-###  https://w3id.org/example#factualInconsistency_25_41
+###  https://w3id.org/halo#factualInconsistency_25_41
 :factualInconsistency_25_41 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_041 .
 
 
-###  https://w3id.org/example#factualInconsistency_25_42
+###  https://w3id.org/halo#factualInconsistency_25_42
 :factualInconsistency_25_42 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_042 .
 
 
-###  https://w3id.org/example#factualInconsistency_26_44
+###  https://w3id.org/halo#factualInconsistency_26_44
 :factualInconsistency_26_44 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_044 .
 
 
-###  https://w3id.org/example#factualInconsistency_27_45
+###  https://w3id.org/halo#factualInconsistency_27_45
 :factualInconsistency_27_45 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_045 .
 
 
-###  https://w3id.org/example#factualInconsistency_27_46
+###  https://w3id.org/halo#factualInconsistency_27_46
 :factualInconsistency_27_46 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_046 .
 
 
-###  https://w3id.org/example#factualInconsistency_27_47
+###  https://w3id.org/halo#factualInconsistency_27_47
 :factualInconsistency_27_47 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_047 .
 
 
-###  https://w3id.org/example#factualInconsistency_28_48
+###  https://w3id.org/halo#factualInconsistency_28_48
 :factualInconsistency_28_48 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_048 .
 
 
-###  https://w3id.org/example#factualInconsistency_28_49
+###  https://w3id.org/halo#factualInconsistency_28_49
 :factualInconsistency_28_49 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_049 .
 
 
-###  https://w3id.org/example#factualInconsistency_28_50
+###  https://w3id.org/halo#factualInconsistency_28_50
 :factualInconsistency_28_50 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_050 .
 
 
-###  https://w3id.org/example#factualInconsistency_29_51
+###  https://w3id.org/halo#factualInconsistency_29_51
 :factualInconsistency_29_51 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_051 .
 
 
-###  https://w3id.org/example#factualInconsistency_29_52
+###  https://w3id.org/halo#factualInconsistency_29_52
 :factualInconsistency_29_52 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_052 .
 
 
-###  https://w3id.org/example#factualInconsistency_29_53
+###  https://w3id.org/halo#factualInconsistency_29_53
 :factualInconsistency_29_53 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_053 .
 
 
-###  https://w3id.org/example#factualInconsistency_30_54
+###  https://w3id.org/halo#factualInconsistency_30_54
 :factualInconsistency_30_54 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_054 .
 
 
-###  https://w3id.org/example#factualInconsistency_31_55
+###  https://w3id.org/halo#factualInconsistency_31_55
 :factualInconsistency_31_55 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_055 .
 
 
-###  https://w3id.org/example#factualInconsistency_32_56
+###  https://w3id.org/halo#factualInconsistency_32_56
 :factualInconsistency_32_56 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#factualInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_056 .
 
 
-###  https://w3id.org/example#factualfabrication_01_01
+###  https://w3id.org/halo#factualfabrication_01_01
 :factualfabrication_01_01 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_01 .
 
 
-###  https://w3id.org/example#factualfabrication_01_02
+###  https://w3id.org/halo#factualfabrication_01_02
 :factualfabrication_01_02 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_02 .
 
 
-###  https://w3id.org/example#factualfabrication_03_03
+###  https://w3id.org/halo#factualfabrication_03_03
 :factualfabrication_03_03 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_03 .
 
 
-###  https://w3id.org/example#factualfabrication_04_04
+###  https://w3id.org/halo#factualfabrication_04_04
 :factualfabrication_04_04 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_04 .
 
 
-###  https://w3id.org/example#factualfabrication_05_05
+###  https://w3id.org/halo#factualfabrication_05_05
 :factualfabrication_05_05 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_05 .
 
 
-###  https://w3id.org/example#factualfabrication_05_06
+###  https://w3id.org/halo#factualfabrication_05_06
 :factualfabrication_05_06 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_06 .
 
 
-###  https://w3id.org/example#factualfabrication_05_07
+###  https://w3id.org/halo#factualfabrication_05_07
 :factualfabrication_05_07 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_07 .
 
 
-###  https://w3id.org/example#factualfabrication_07_09
+###  https://w3id.org/halo#factualfabrication_07_09
 :factualfabrication_07_09 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_09 .
 
 
-###  https://w3id.org/example#factualfabrication_07_10
+###  https://w3id.org/halo#factualfabrication_07_10
 :factualfabrication_07_10 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_010 .
 
 
-###  https://w3id.org/example#factualfabrication_08_11
+###  https://w3id.org/halo#factualfabrication_08_11
 :factualfabrication_08_11 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_011 .
 
 
-###  https://w3id.org/example#factualfabrication_09_12
+###  https://w3id.org/halo#factualfabrication_09_12
 :factualfabrication_09_12 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_012 .
 
 
-###  https://w3id.org/example#factualfabrication_10_13
+###  https://w3id.org/halo#factualfabrication_10_13
 :factualfabrication_10_13 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_013 .
 
 
-###  https://w3id.org/example#factualfabrication_11_14
+###  https://w3id.org/halo#factualfabrication_11_14
 :factualfabrication_11_14 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_014 .
 
 
-###  https://w3id.org/example#factualfabrication_12_16
+###  https://w3id.org/halo#factualfabrication_12_16
 :factualfabrication_12_16 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_016 .
 
 
-###  https://w3id.org/example#factualfabrication_14_18
+###  https://w3id.org/halo#factualfabrication_14_18
 :factualfabrication_14_18 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_018 .
 
 
-###  https://w3id.org/example#factualfabrication_15_19
+###  https://w3id.org/halo#factualfabrication_15_19
 :factualfabrication_15_19 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_019 .
 
 
-###  https://w3id.org/example#factualfabrication_15_20
+###  https://w3id.org/halo#factualfabrication_15_20
 :factualfabrication_15_20 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_020 .
 
 
-###  https://w3id.org/example#factualfabrication_15_21
+###  https://w3id.org/halo#factualfabrication_15_21
 :factualfabrication_15_21 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_021 .
 
 
-###  https://w3id.org/example#factualfabrication_16_22
+###  https://w3id.org/halo#factualfabrication_16_22
 :factualfabrication_16_22 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_022 .
 
 
-###  https://w3id.org/example#factualfabrication_16_23
+###  https://w3id.org/halo#factualfabrication_16_23
 :factualfabrication_16_23 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_023 .
 
 
-###  https://w3id.org/example#factualfabrication_18_26
+###  https://w3id.org/halo#factualfabrication_18_26
 :factualfabrication_18_26 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_026 .
 
 
-###  https://w3id.org/example#factualfabrication_20_30
+###  https://w3id.org/halo#factualfabrication_20_30
 :factualfabrication_20_30 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_030 .
 
 
-###  https://w3id.org/example#factualfabrication_21_32
+###  https://w3id.org/halo#factualfabrication_21_32
 :factualfabrication_21_32 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_032 .
 
 
-###  https://w3id.org/example#factualfabrication_21_33
+###  https://w3id.org/halo#factualfabrication_21_33
 :factualfabrication_21_33 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_033 .
 
 
-###  https://w3id.org/example#factualfabrication_25_41
+###  https://w3id.org/halo#factualfabrication_25_41
 :factualfabrication_25_41 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_041 .
 
 
-###  https://w3id.org/example#factualfabrication_25_42
+###  https://w3id.org/halo#factualfabrication_25_42
 :factualfabrication_25_42 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_042 .
 
 
-###  https://w3id.org/example#factualfabrication_26_44
+###  https://w3id.org/halo#factualfabrication_26_44
 :factualfabrication_26_44 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_044 .
 
 
-###  https://w3id.org/example#factualfabrication_27_45
+###  https://w3id.org/halo#factualfabrication_27_45
 :factualfabrication_27_45 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_045 .
 
 
-###  https://w3id.org/example#factualfabrication_27_46
+###  https://w3id.org/halo#factualfabrication_27_46
 :factualfabrication_27_46 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_046 .
 
 
-###  https://w3id.org/example#factualfabrication_27_47
+###  https://w3id.org/halo#factualfabrication_27_47
 :factualfabrication_27_47 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_047 .
 
 
-###  https://w3id.org/example#factualfabrication_28_48
+###  https://w3id.org/halo#factualfabrication_28_48
 :factualfabrication_28_48 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_048 .
 
 
-###  https://w3id.org/example#factualfabrication_28_49
+###  https://w3id.org/halo#factualfabrication_28_49
 :factualfabrication_28_49 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_049 .
 
 
-###  https://w3id.org/example#factualfabrication_28_50
+###  https://w3id.org/halo#factualfabrication_28_50
 :factualfabrication_28_50 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_050 .
 
 
-###  https://w3id.org/example#factualfabrication_29_51
+###  https://w3id.org/halo#factualfabrication_29_51
 :factualfabrication_29_51 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_051 .
 
 
-###  https://w3id.org/example#factualfabrication_29_52
+###  https://w3id.org/halo#factualfabrication_29_52
 :factualfabrication_29_52 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_052 .
 
 
-###  https://w3id.org/example#factualfabrication_29_53
+###  https://w3id.org/halo#factualfabrication_29_53
 :factualfabrication_29_53 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_053 .
 
 
-###  https://w3id.org/example#factualfabrication_30_54
+###  https://w3id.org/halo#factualfabrication_30_54
 :factualfabrication_30_54 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_054 .
 
 
-###  https://w3id.org/example#factualfabrication_32_56
+###  https://w3id.org/halo#factualfabrication_32_56
 :factualfabrication_32_56 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_056 .
 
 
-###  https://w3id.org/example#factualfabrication_32_57
+###  https://w3id.org/halo#factualfabrication_32_57
 :factualfabrication_32_57 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_057 .
 
 
-###  https://w3id.org/example#factualfabrication_33_58
+###  https://w3id.org/halo#factualfabrication_33_58
 :factualfabrication_33_58 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_058 .
 
 
-###  https://w3id.org/example#factualfabrication_33_59
+###  https://w3id.org/halo#factualfabrication_33_59
 :factualfabrication_33_59 rdf:type owl:NamedIndividual ,
                                    <http://w3id.org/halo/hallucination#factualFabrication> ;
                           <http://metadata.com#hallucinationGeneratedBy> :answer_059 .
 
 
-###  https://w3id.org/example#instructionInconsistency_13_17
+###  https://w3id.org/halo#instructionInconsistency_13_17
 :instructionInconsistency_13_17 rdf:type owl:NamedIndividual ,
                                          <http://w3id.org/halo/hallucination#instructionInconsistency> ;
                                 <http://metadata.com#hallucinationGeneratedBy> :answer_017 .
 
 
-###  https://w3id.org/example#instructionInconsistency_15_21
+###  https://w3id.org/halo#instructionInconsistency_15_21
 :instructionInconsistency_15_21 rdf:type owl:NamedIndividual ,
                                          <http://w3id.org/halo/hallucination#instructionInconsistency> ;
                                 <http://metadata.com#hallucinationGeneratedBy> :answer_021 .
 
 
-###  https://w3id.org/example#instructionInconsistency_18_27
+###  https://w3id.org/halo#instructionInconsistency_18_27
 :instructionInconsistency_18_27 rdf:type owl:NamedIndividual ,
                                          <http://w3id.org/halo/hallucination#instructionInconsistency> ;
                                 <http://metadata.com#hallucinationGeneratedBy> :answer_027 .
 
 
-###  https://w3id.org/example#logicalInconsistency_19_28
+###  https://w3id.org/halo#logicalInconsistency_19_28
 :logicalInconsistency_19_28 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#logicalInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_028 .
 
 
-###  https://w3id.org/example#logicalInconsistency_22_34
+###  https://w3id.org/halo#logicalInconsistency_22_34
 :logicalInconsistency_22_34 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#logicalInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_034 .
 
 
-###  https://w3id.org/example#logicalInconsistency_24_38
+###  https://w3id.org/halo#logicalInconsistency_24_38
 :logicalInconsistency_24_38 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#logicalInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_038 .
 
 
-###  https://w3id.org/example#logicalInconsistency_24_39
+###  https://w3id.org/halo#logicalInconsistency_24_39
 :logicalInconsistency_24_39 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#logicalInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_039 .
 
 
-###  https://w3id.org/example#logicalInconsistency_24_40
+###  https://w3id.org/halo#logicalInconsistency_24_40
 :logicalInconsistency_24_40 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#logicalInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_040 .
 
 
-###  https://w3id.org/example#logicalInconsistency_26_43
+###  https://w3id.org/halo#logicalInconsistency_26_43
 :logicalInconsistency_26_43 rdf:type owl:NamedIndividual ,
                                      <http://w3id.org/halo/hallucination#logicalInconsistency> ;
                             <http://metadata.com#hallucinationGeneratedBy> :answer_043 .
 
 
-###  https://w3id.org/example#prompt_01
+###  https://w3id.org/halo#prompt_01
 :prompt_01 rdf:type owl:NamedIndividual ,
                     <http://w3id.org/halo/metadata#prompts> ;
            <http://metadata.com#wasAskedBy> :Claude ,
                                             :GPT-3.5 ;
-           :associatedWithAnswer :answer_01 ,
-                                 :answer_02 .
+           <https://w3id.org/example#associatedWithAnswer> :answer_01 ,
+                                                           :answer_02 .
 
 
-###  https://w3id.org/example#prompt_010
+###  https://w3id.org/halo#prompt_010
 :prompt_010 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :Claude ;
-            :associatedWithAnswer :answer_013 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_013 .
 
 
-###  https://w3id.org/example#prompt_011
+###  https://w3id.org/halo#prompt_011
 :prompt_011 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :BARD ;
-            :associatedWithAnswer :answer_014 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_014 .
 
 
-###  https://w3id.org/example#prompt_012
+###  https://w3id.org/halo#prompt_012
 :prompt_012 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :BARD ,
                                              :GPT-3.5 ;
-            :associatedWithAnswer :answer_015 ,
-                                  :answer_016 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_015 ,
+                                                            :answer_016 .
 
 
-###  https://w3id.org/example#prompt_013
+###  https://w3id.org/halo#prompt_013
 :prompt_013 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :BARD ;
-            :associatedWithAnswer :answer_017 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_017 .
 
 
-###  https://w3id.org/example#prompt_014
+###  https://w3id.org/halo#prompt_014
 :prompt_014 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :BARD ;
-            :associatedWithAnswer :answer_018 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_018 .
 
 
-###  https://w3id.org/example#prompt_015
+###  https://w3id.org/halo#prompt_015
 :prompt_015 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :BARD ,
                                              :Claude ,
                                              :GPT-3.5 ;
-            :associatedWithAnswer :answer_019 ,
-                                  :answer_020 ,
-                                  :answer_021 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_019 ,
+                                                            :answer_020 ,
+                                                            :answer_021 .
 
 
-###  https://w3id.org/example#prompt_016
+###  https://w3id.org/halo#prompt_016
 :prompt_016 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :BARD ,
                                              :Claude ;
-            :associatedWithAnswer :answer_022 ,
-                                  :answer_023 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_022 ,
+                                                            :answer_023 .
 
 
-###  https://w3id.org/example#prompt_017
+###  https://w3id.org/halo#prompt_017
 :prompt_017 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :Claude ,
                                              :GPT-3.5 ;
-            :associatedWithAnswer :answer_024 ,
-                                  :answer_025 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_024 ,
+                                                            :answer_025 .
 
 
-###  https://w3id.org/example#prompt_018
+###  https://w3id.org/halo#prompt_018
 :prompt_018 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :Claude ,
                                              :GPT-3.5 ;
-            :associatedWithAnswer :answer_026 ,
-                                  :answer_027 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_026 ,
+                                                            :answer_027 .
 
 
-###  https://w3id.org/example#prompt_019
+###  https://w3id.org/halo#prompt_019
 :prompt_019 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :GPT-3.5 ;
-            :associatedWithAnswer :answer_028 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_028 .
 
 
-###  https://w3id.org/example#prompt_020
+###  https://w3id.org/halo#prompt_020
 :prompt_020 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :BARD ,
                                              :Claude ;
-            :associatedWithAnswer :answer_029 ,
-                                  :answer_030 ,
-                                  :answer_031 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_029 ,
+                                                            :answer_030 ,
+                                                            :answer_031 .
 
 
-###  https://w3id.org/example#prompt_021
+###  https://w3id.org/halo#prompt_021
 :prompt_021 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :BARD ,
                                              :GPT-3.5 ;
-            :associatedWithAnswer :answer_032 ,
-                                  :answer_033 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_032 ,
+                                                            :answer_033 .
 
 
-###  https://w3id.org/example#prompt_022
+###  https://w3id.org/halo#prompt_022
 :prompt_022 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :Claude ,
                                              :GPT-3.5 ;
-            :associatedWithAnswer :answer_034 ,
-                                  :answer_035 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_034 ,
+                                                            :answer_035 .
 
 
-###  https://w3id.org/example#prompt_023
+###  https://w3id.org/halo#prompt_023
 :prompt_023 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :BARD ,
                                              :Claude ;
-            :associatedWithAnswer :answer_036 ,
-                                  :answer_037 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_036 ,
+                                                            :answer_037 .
 
 
-###  https://w3id.org/example#prompt_024
+###  https://w3id.org/halo#prompt_024
 :prompt_024 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :BARD ,
                                              :Claude ,
                                              :GPT-3.5 ;
-            :associatedWithAnswer :answer_038 ,
-                                  :answer_039 ,
-                                  :answer_040 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_038 ,
+                                                            :answer_039 ,
+                                                            :answer_040 .
 
 
-###  https://w3id.org/example#prompt_025
+###  https://w3id.org/halo#prompt_025
 :prompt_025 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :BARD ,
                                              :GPT-3.5 ;
-            :associatedWithAnswer :answer_041 ,
-                                  :answer_042 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_041 ,
+                                                            :answer_042 .
 
 
-###  https://w3id.org/example#prompt_026
+###  https://w3id.org/halo#prompt_026
 :prompt_026 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :BARD ,
                                              :GPT-3.5 ;
-            :associatedWithAnswer :answer_043 ,
-                                  :answer_044 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_043 ,
+                                                            :answer_044 .
 
 
-###  https://w3id.org/example#prompt_027
+###  https://w3id.org/halo#prompt_027
 :prompt_027 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :BARD ,
                                              :Claude ,
                                              :GPT-3.5 ;
-            :associatedWithAnswer :answer_045 ,
-                                  :answer_046 ,
-                                  :answer_047 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_045 ,
+                                                            :answer_046 ,
+                                                            :answer_047 .
 
 
-###  https://w3id.org/example#prompt_028
+###  https://w3id.org/halo#prompt_028
 :prompt_028 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :BARD ,
                                              :Claude ,
                                              :GPT-3.5 ;
-            :associatedWithAnswer :answer_048 ,
-                                  :answer_049 ,
-                                  :answer_050 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_048 ,
+                                                            :answer_049 ,
+                                                            :answer_050 .
 
 
-###  https://w3id.org/example#prompt_029
+###  https://w3id.org/halo#prompt_029
 :prompt_029 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :BARD ,
                                              :Claude ,
                                              :GPT-3.5 ;
-            :associatedWithAnswer :answer_051 ,
-                                  :answer_052 ,
-                                  :answer_053 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_051 ,
+                                                            :answer_052 ,
+                                                            :answer_053 .
 
 
-###  https://w3id.org/example#prompt_03
+###  https://w3id.org/halo#prompt_03
 :prompt_03 rdf:type owl:NamedIndividual ;
            <http://metadata.com#wasAskedBy> :BARD ;
-           :associatedWithAnswer :answer_03 .
+           <https://w3id.org/example#associatedWithAnswer> :answer_03 .
 
 
-###  https://w3id.org/example#prompt_030
+###  https://w3id.org/halo#prompt_030
 :prompt_030 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :BARD ;
-            :associatedWithAnswer :answer_054 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_054 .
 
 
-###  https://w3id.org/example#prompt_031
+###  https://w3id.org/halo#prompt_031
 :prompt_031 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :BARD ;
-            :associatedWithAnswer :answer_055 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_055 .
 
 
-###  https://w3id.org/example#prompt_032
+###  https://w3id.org/halo#prompt_032
 :prompt_032 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :BARD ,
                                              :Claude ;
-            :associatedWithAnswer :answer_056 ,
-                                  :answer_057 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_056 ,
+                                                            :answer_057 .
 
 
-###  https://w3id.org/example#prompt_033
+###  https://w3id.org/halo#prompt_033
 :prompt_033 rdf:type owl:NamedIndividual ;
             <http://metadata.com#wasAskedBy> :BARD ,
                                              :GPT-3.5 ;
-            :associatedWithAnswer :answer_058 ,
-                                  :answer_059 .
+            <https://w3id.org/example#associatedWithAnswer> :answer_058 ,
+                                                            :answer_059 .
 
 
-###  https://w3id.org/example#prompt_04
+###  https://w3id.org/halo#prompt_04
 :prompt_04 rdf:type owl:NamedIndividual ;
            <http://metadata.com#wasAskedBy> :Claude ;
-           :associatedWithAnswer :answer_04 .
+           <https://w3id.org/example#associatedWithAnswer> :answer_04 .
 
 
-###  https://w3id.org/example#prompt_05
+###  https://w3id.org/halo#prompt_05
 :prompt_05 rdf:type owl:NamedIndividual ;
            <http://metadata.com#wasAskedBy> :BARD ,
                                             :Claude ,
                                             :GPT-3.5 ;
-           :associatedWithAnswer :answer_05 ,
-                                 :answer_06 ,
-                                 :answer_07 .
+           <https://w3id.org/example#associatedWithAnswer> :answer_05 ,
+                                                           :answer_06 ,
+                                                           :answer_07 .
 
 
-###  https://w3id.org/example#prompt_06
+###  https://w3id.org/halo#prompt_06
 :prompt_06 rdf:type owl:NamedIndividual ;
            <http://metadata.com#wasAskedBy> :BARD ;
-           :associatedWithAnswer :answer_08 .
+           <https://w3id.org/example#associatedWithAnswer> :answer_08 .
 
 
-###  https://w3id.org/example#prompt_07
+###  https://w3id.org/halo#prompt_07
 :prompt_07 rdf:type owl:NamedIndividual ;
            <http://metadata.com#wasAskedBy> :BARD ,
                                             :Claude ;
-           :associatedWithAnswer :answer_010 ,
-                                 :answer_09 .
+           <https://w3id.org/example#associatedWithAnswer> :answer_010 ,
+                                                           :answer_09 .
 
 
-###  https://w3id.org/example#prompt_08
+###  https://w3id.org/halo#prompt_08
 :prompt_08 rdf:type owl:NamedIndividual ;
            <http://metadata.com#wasAskedBy> :BARD ;
-           :associatedWithAnswer :answer_011 .
+           <https://w3id.org/example#associatedWithAnswer> :answer_011 .
 
 
-###  https://w3id.org/example#prompt_09
+###  https://w3id.org/halo#prompt_09
 :prompt_09 rdf:type owl:NamedIndividual ;
            <http://metadata.com#wasAskedBy> :BARD ;
-           :associatedWithAnswer :answer_012 .
+           <https://w3id.org/example#associatedWithAnswer> :answer_012 .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

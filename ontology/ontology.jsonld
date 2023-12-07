@@ -254,7 +254,13 @@
   "@id" : "http://www.w3.org/2002/07/owl#versionInfo",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://w3id.org/example#",
+  "@id" : "https://w3id.org/example#associatedWithAnswer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/example#isGeneratedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/halo#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "Navapat Nananukul"
@@ -274,10 +280,10 @@
     "@value" : "choosenprefix"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@id" : "https://w3id.org/example#"
+    "@id" : "https://w3id.org/halo#"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/example#"
+    "@id" : "https://w3id.org/halo#"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "0.0.1"
@@ -286,385 +292,385 @@
     "@id" : "https://chowlk.linkeddata.es/"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#BARD",
+  "@id" : "https://w3id.org/halo#BARD",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/metadata#largeLanguageModel"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#Claude",
+  "@id" : "https://w3id.org/halo#Claude",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/metadata#largeLanguageModel"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#GPT-3.5",
+  "@id" : "https://w3id.org/halo#GPT-3.5",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/metadata#largeLanguageModel"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_01",
+  "@id" : "https://w3id.org/halo#answer_01",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/metadata#answers"
   } ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_010",
+  "@id" : "https://w3id.org/halo#answer_010",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_011",
+  "@id" : "https://w3id.org/halo#answer_011",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_012",
+  "@id" : "https://w3id.org/halo#answer_012",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_013",
+  "@id" : "https://w3id.org/halo#answer_013",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_014",
+  "@id" : "https://w3id.org/halo#answer_014",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_015",
+  "@id" : "https://w3id.org/halo#answer_015",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_016",
+  "@id" : "https://w3id.org/halo#answer_016",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_017",
+  "@id" : "https://w3id.org/halo#answer_017",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_018",
+  "@id" : "https://w3id.org/halo#answer_018",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_019",
+  "@id" : "https://w3id.org/halo#answer_019",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_02",
+  "@id" : "https://w3id.org/halo#answer_02",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/metadata#answers"
   } ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_020",
+  "@id" : "https://w3id.org/halo#answer_020",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_021",
+  "@id" : "https://w3id.org/halo#answer_021",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_022",
+  "@id" : "https://w3id.org/halo#answer_022",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_023",
+  "@id" : "https://w3id.org/halo#answer_023",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_024",
+  "@id" : "https://w3id.org/halo#answer_024",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_025",
+  "@id" : "https://w3id.org/halo#answer_025",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_026",
+  "@id" : "https://w3id.org/halo#answer_026",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_027",
+  "@id" : "https://w3id.org/halo#answer_027",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_028",
+  "@id" : "https://w3id.org/halo#answer_028",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_029",
+  "@id" : "https://w3id.org/halo#answer_029",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_03",
+  "@id" : "https://w3id.org/halo#answer_03",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_030",
+  "@id" : "https://w3id.org/halo#answer_030",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_031",
+  "@id" : "https://w3id.org/halo#answer_031",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_032",
+  "@id" : "https://w3id.org/halo#answer_032",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_033",
+  "@id" : "https://w3id.org/halo#answer_033",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_034",
+  "@id" : "https://w3id.org/halo#answer_034",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_035",
+  "@id" : "https://w3id.org/halo#answer_035",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_036",
+  "@id" : "https://w3id.org/halo#answer_036",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_037",
+  "@id" : "https://w3id.org/halo#answer_037",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_038",
+  "@id" : "https://w3id.org/halo#answer_038",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_039",
+  "@id" : "https://w3id.org/halo#answer_039",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_04",
+  "@id" : "https://w3id.org/halo#answer_04",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_040",
+  "@id" : "https://w3id.org/halo#answer_040",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_041",
+  "@id" : "https://w3id.org/halo#answer_041",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_042",
+  "@id" : "https://w3id.org/halo#answer_042",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_043",
+  "@id" : "https://w3id.org/halo#answer_043",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_044",
+  "@id" : "https://w3id.org/halo#answer_044",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_045",
+  "@id" : "https://w3id.org/halo#answer_045",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_046",
+  "@id" : "https://w3id.org/halo#answer_046",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_047",
+  "@id" : "https://w3id.org/halo#answer_047",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_048",
+  "@id" : "https://w3id.org/halo#answer_048",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_049",
+  "@id" : "https://w3id.org/halo#answer_049",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_05",
+  "@id" : "https://w3id.org/halo#answer_05",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_050",
+  "@id" : "https://w3id.org/halo#answer_050",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_051",
+  "@id" : "https://w3id.org/halo#answer_051",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_052",
+  "@id" : "https://w3id.org/halo#answer_052",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_053",
+  "@id" : "https://w3id.org/halo#answer_053",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_054",
+  "@id" : "https://w3id.org/halo#answer_054",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_055",
+  "@id" : "https://w3id.org/halo#answer_055",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_056",
+  "@id" : "https://w3id.org/halo#answer_056",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_057",
+  "@id" : "https://w3id.org/halo#answer_057",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_058",
+  "@id" : "https://w3id.org/halo#answer_058",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_059",
+  "@id" : "https://w3id.org/halo#answer_059",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_06",
+  "@id" : "https://w3id.org/halo#answer_06",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_07",
+  "@id" : "https://w3id.org/halo#answer_07",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_08",
+  "@id" : "https://w3id.org/halo#answer_08",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#answer_09",
+  "@id" : "https://w3id.org/halo#answer_09",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "https://w3id.org/example#isGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#associatedWithAnswer",
+  "@id" : "https://w3id.org/halo#associatedWithAnswer",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://w3id.org/halo/metadata#prompts"
@@ -673,949 +679,949 @@
     "@id" : "http://w3id.org/halo/metadata#answers"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#contextInconsistency_01_02",
+  "@id" : "https://w3id.org/halo#contextInconsistency_01_02",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_02"
+    "@id" : "https://w3id.org/halo#answer_02"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#contextInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#contextInconsistency_04_04",
+  "@id" : "https://w3id.org/halo#contextInconsistency_04_04",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_04"
+    "@id" : "https://w3id.org/halo#answer_04"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#contextInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#contextInconsistency_08_11",
+  "@id" : "https://w3id.org/halo#contextInconsistency_08_11",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_011"
+    "@id" : "https://w3id.org/halo#answer_011"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#contextInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#contextInconsistency_10_13",
+  "@id" : "https://w3id.org/halo#contextInconsistency_10_13",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_013"
+    "@id" : "https://w3id.org/halo#answer_013"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#contextInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#contextInconsistency_13_17",
+  "@id" : "https://w3id.org/halo#contextInconsistency_13_17",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_017"
+    "@id" : "https://w3id.org/halo#answer_017"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#contextInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#contextInconsistency_18_26",
+  "@id" : "https://w3id.org/halo#contextInconsistency_18_26",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_026"
+    "@id" : "https://w3id.org/halo#answer_026"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#contextInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#contextInconsistency_18_27",
+  "@id" : "https://w3id.org/halo#contextInconsistency_18_27",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_027"
+    "@id" : "https://w3id.org/halo#answer_027"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#contextInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#contextInconsistency_23_36",
+  "@id" : "https://w3id.org/halo#contextInconsistency_23_36",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_036"
+    "@id" : "https://w3id.org/halo#answer_036"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#contextInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#contextInconsistency_24_38",
+  "@id" : "https://w3id.org/halo#contextInconsistency_24_38",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_038"
+    "@id" : "https://w3id.org/halo#answer_038"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#contextInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#contextInconsistency_24_39",
+  "@id" : "https://w3id.org/halo#contextInconsistency_24_39",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_039"
+    "@id" : "https://w3id.org/halo#answer_039"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#contextInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#contextInconsistency_24_40",
+  "@id" : "https://w3id.org/halo#contextInconsistency_24_40",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_040"
+    "@id" : "https://w3id.org/halo#answer_040"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#contextInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#contextInconsistency_30_54",
+  "@id" : "https://w3id.org/halo#contextInconsistency_30_54",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_054"
+    "@id" : "https://w3id.org/halo#answer_054"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#contextInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_01_01",
+  "@id" : "https://w3id.org/halo#factualInconsistency_01_01",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_01"
+    "@id" : "https://w3id.org/halo#answer_01"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_01_02",
+  "@id" : "https://w3id.org/halo#factualInconsistency_01_02",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_02"
+    "@id" : "https://w3id.org/halo#answer_02"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_03_03",
+  "@id" : "https://w3id.org/halo#factualInconsistency_03_03",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_03"
+    "@id" : "https://w3id.org/halo#answer_03"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_04_04",
+  "@id" : "https://w3id.org/halo#factualInconsistency_04_04",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_04"
+    "@id" : "https://w3id.org/halo#answer_04"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_05_05",
+  "@id" : "https://w3id.org/halo#factualInconsistency_05_05",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_05"
+    "@id" : "https://w3id.org/halo#answer_05"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_05_06",
+  "@id" : "https://w3id.org/halo#factualInconsistency_05_06",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_06"
+    "@id" : "https://w3id.org/halo#answer_06"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_05_07",
+  "@id" : "https://w3id.org/halo#factualInconsistency_05_07",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_07"
+    "@id" : "https://w3id.org/halo#answer_07"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_06_08",
+  "@id" : "https://w3id.org/halo#factualInconsistency_06_08",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_08"
+    "@id" : "https://w3id.org/halo#answer_08"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_07_09",
+  "@id" : "https://w3id.org/halo#factualInconsistency_07_09",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_09"
+    "@id" : "https://w3id.org/halo#answer_09"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_07_10",
+  "@id" : "https://w3id.org/halo#factualInconsistency_07_10",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_010"
+    "@id" : "https://w3id.org/halo#answer_010"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_08_11",
+  "@id" : "https://w3id.org/halo#factualInconsistency_08_11",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_011"
+    "@id" : "https://w3id.org/halo#answer_011"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_09_12",
+  "@id" : "https://w3id.org/halo#factualInconsistency_09_12",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_012"
+    "@id" : "https://w3id.org/halo#answer_012"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_10_13",
+  "@id" : "https://w3id.org/halo#factualInconsistency_10_13",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_013"
+    "@id" : "https://w3id.org/halo#answer_013"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_11_14",
+  "@id" : "https://w3id.org/halo#factualInconsistency_11_14",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_014"
+    "@id" : "https://w3id.org/halo#answer_014"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_12_15",
+  "@id" : "https://w3id.org/halo#factualInconsistency_12_15",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_015"
+    "@id" : "https://w3id.org/halo#answer_015"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_12_16",
+  "@id" : "https://w3id.org/halo#factualInconsistency_12_16",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_016"
+    "@id" : "https://w3id.org/halo#answer_016"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_14_18",
+  "@id" : "https://w3id.org/halo#factualInconsistency_14_18",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_018"
+    "@id" : "https://w3id.org/halo#answer_018"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_15_19",
+  "@id" : "https://w3id.org/halo#factualInconsistency_15_19",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_019"
+    "@id" : "https://w3id.org/halo#answer_019"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_15_20",
+  "@id" : "https://w3id.org/halo#factualInconsistency_15_20",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_020"
+    "@id" : "https://w3id.org/halo#answer_020"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_15_21",
+  "@id" : "https://w3id.org/halo#factualInconsistency_15_21",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_021"
+    "@id" : "https://w3id.org/halo#answer_021"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_16_22",
+  "@id" : "https://w3id.org/halo#factualInconsistency_16_22",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_022"
+    "@id" : "https://w3id.org/halo#answer_022"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_16_23",
+  "@id" : "https://w3id.org/halo#factualInconsistency_16_23",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_023"
+    "@id" : "https://w3id.org/halo#answer_023"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_17_24",
+  "@id" : "https://w3id.org/halo#factualInconsistency_17_24",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_024"
+    "@id" : "https://w3id.org/halo#answer_024"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_17_25",
+  "@id" : "https://w3id.org/halo#factualInconsistency_17_25",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_025"
+    "@id" : "https://w3id.org/halo#answer_025"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_20_30",
+  "@id" : "https://w3id.org/halo#factualInconsistency_20_30",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_030"
+    "@id" : "https://w3id.org/halo#answer_030"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_21_32",
+  "@id" : "https://w3id.org/halo#factualInconsistency_21_32",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_032"
+    "@id" : "https://w3id.org/halo#answer_032"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_21_33",
+  "@id" : "https://w3id.org/halo#factualInconsistency_21_33",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_033"
+    "@id" : "https://w3id.org/halo#answer_033"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_22_34",
+  "@id" : "https://w3id.org/halo#factualInconsistency_22_34",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_034"
+    "@id" : "https://w3id.org/halo#answer_034"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_22_35",
+  "@id" : "https://w3id.org/halo#factualInconsistency_22_35",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_035"
+    "@id" : "https://w3id.org/halo#answer_035"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_23_36",
+  "@id" : "https://w3id.org/halo#factualInconsistency_23_36",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_036"
+    "@id" : "https://w3id.org/halo#answer_036"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_23_37",
+  "@id" : "https://w3id.org/halo#factualInconsistency_23_37",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_037"
+    "@id" : "https://w3id.org/halo#answer_037"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_24_38",
+  "@id" : "https://w3id.org/halo#factualInconsistency_24_38",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_038"
+    "@id" : "https://w3id.org/halo#answer_038"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_24_39",
+  "@id" : "https://w3id.org/halo#factualInconsistency_24_39",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_039"
+    "@id" : "https://w3id.org/halo#answer_039"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_24_40",
+  "@id" : "https://w3id.org/halo#factualInconsistency_24_40",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_040"
+    "@id" : "https://w3id.org/halo#answer_040"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_25_41",
+  "@id" : "https://w3id.org/halo#factualInconsistency_25_41",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_041"
+    "@id" : "https://w3id.org/halo#answer_041"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_25_42",
+  "@id" : "https://w3id.org/halo#factualInconsistency_25_42",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_042"
+    "@id" : "https://w3id.org/halo#answer_042"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_26_44",
+  "@id" : "https://w3id.org/halo#factualInconsistency_26_44",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_044"
+    "@id" : "https://w3id.org/halo#answer_044"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_27_45",
+  "@id" : "https://w3id.org/halo#factualInconsistency_27_45",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_045"
+    "@id" : "https://w3id.org/halo#answer_045"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_27_46",
+  "@id" : "https://w3id.org/halo#factualInconsistency_27_46",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_046"
+    "@id" : "https://w3id.org/halo#answer_046"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_27_47",
+  "@id" : "https://w3id.org/halo#factualInconsistency_27_47",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_047"
+    "@id" : "https://w3id.org/halo#answer_047"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_28_48",
+  "@id" : "https://w3id.org/halo#factualInconsistency_28_48",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_048"
+    "@id" : "https://w3id.org/halo#answer_048"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_28_49",
+  "@id" : "https://w3id.org/halo#factualInconsistency_28_49",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_049"
+    "@id" : "https://w3id.org/halo#answer_049"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_28_50",
+  "@id" : "https://w3id.org/halo#factualInconsistency_28_50",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_050"
+    "@id" : "https://w3id.org/halo#answer_050"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_29_51",
+  "@id" : "https://w3id.org/halo#factualInconsistency_29_51",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_051"
+    "@id" : "https://w3id.org/halo#answer_051"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_29_52",
+  "@id" : "https://w3id.org/halo#factualInconsistency_29_52",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_052"
+    "@id" : "https://w3id.org/halo#answer_052"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_29_53",
+  "@id" : "https://w3id.org/halo#factualInconsistency_29_53",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_053"
+    "@id" : "https://w3id.org/halo#answer_053"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_30_54",
+  "@id" : "https://w3id.org/halo#factualInconsistency_30_54",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_054"
+    "@id" : "https://w3id.org/halo#answer_054"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_31_55",
+  "@id" : "https://w3id.org/halo#factualInconsistency_31_55",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_055"
+    "@id" : "https://w3id.org/halo#answer_055"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualInconsistency_32_56",
+  "@id" : "https://w3id.org/halo#factualInconsistency_32_56",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_056"
+    "@id" : "https://w3id.org/halo#answer_056"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_01_01",
+  "@id" : "https://w3id.org/halo#factualfabrication_01_01",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_01"
+    "@id" : "https://w3id.org/halo#answer_01"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_01_02",
+  "@id" : "https://w3id.org/halo#factualfabrication_01_02",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_02"
+    "@id" : "https://w3id.org/halo#answer_02"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_03_03",
+  "@id" : "https://w3id.org/halo#factualfabrication_03_03",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_03"
+    "@id" : "https://w3id.org/halo#answer_03"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_04_04",
+  "@id" : "https://w3id.org/halo#factualfabrication_04_04",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_04"
+    "@id" : "https://w3id.org/halo#answer_04"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_05_05",
+  "@id" : "https://w3id.org/halo#factualfabrication_05_05",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_05"
+    "@id" : "https://w3id.org/halo#answer_05"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_05_06",
+  "@id" : "https://w3id.org/halo#factualfabrication_05_06",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_06"
+    "@id" : "https://w3id.org/halo#answer_06"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_05_07",
+  "@id" : "https://w3id.org/halo#factualfabrication_05_07",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_07"
+    "@id" : "https://w3id.org/halo#answer_07"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_07_09",
+  "@id" : "https://w3id.org/halo#factualfabrication_07_09",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_09"
+    "@id" : "https://w3id.org/halo#answer_09"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_07_10",
+  "@id" : "https://w3id.org/halo#factualfabrication_07_10",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_010"
+    "@id" : "https://w3id.org/halo#answer_010"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_08_11",
+  "@id" : "https://w3id.org/halo#factualfabrication_08_11",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_011"
+    "@id" : "https://w3id.org/halo#answer_011"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_09_12",
+  "@id" : "https://w3id.org/halo#factualfabrication_09_12",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_012"
+    "@id" : "https://w3id.org/halo#answer_012"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_10_13",
+  "@id" : "https://w3id.org/halo#factualfabrication_10_13",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_013"
+    "@id" : "https://w3id.org/halo#answer_013"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_11_14",
+  "@id" : "https://w3id.org/halo#factualfabrication_11_14",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_014"
+    "@id" : "https://w3id.org/halo#answer_014"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_12_16",
+  "@id" : "https://w3id.org/halo#factualfabrication_12_16",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_016"
+    "@id" : "https://w3id.org/halo#answer_016"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_14_18",
+  "@id" : "https://w3id.org/halo#factualfabrication_14_18",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_018"
+    "@id" : "https://w3id.org/halo#answer_018"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_15_19",
+  "@id" : "https://w3id.org/halo#factualfabrication_15_19",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_019"
+    "@id" : "https://w3id.org/halo#answer_019"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_15_20",
+  "@id" : "https://w3id.org/halo#factualfabrication_15_20",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_020"
+    "@id" : "https://w3id.org/halo#answer_020"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_15_21",
+  "@id" : "https://w3id.org/halo#factualfabrication_15_21",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_021"
+    "@id" : "https://w3id.org/halo#answer_021"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_16_22",
+  "@id" : "https://w3id.org/halo#factualfabrication_16_22",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_022"
+    "@id" : "https://w3id.org/halo#answer_022"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_16_23",
+  "@id" : "https://w3id.org/halo#factualfabrication_16_23",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_023"
+    "@id" : "https://w3id.org/halo#answer_023"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_18_26",
+  "@id" : "https://w3id.org/halo#factualfabrication_18_26",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_026"
+    "@id" : "https://w3id.org/halo#answer_026"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_20_30",
+  "@id" : "https://w3id.org/halo#factualfabrication_20_30",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_030"
+    "@id" : "https://w3id.org/halo#answer_030"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_21_32",
+  "@id" : "https://w3id.org/halo#factualfabrication_21_32",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_032"
+    "@id" : "https://w3id.org/halo#answer_032"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_21_33",
+  "@id" : "https://w3id.org/halo#factualfabrication_21_33",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_033"
+    "@id" : "https://w3id.org/halo#answer_033"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_25_41",
+  "@id" : "https://w3id.org/halo#factualfabrication_25_41",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_041"
+    "@id" : "https://w3id.org/halo#answer_041"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_25_42",
+  "@id" : "https://w3id.org/halo#factualfabrication_25_42",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_042"
+    "@id" : "https://w3id.org/halo#answer_042"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_26_44",
+  "@id" : "https://w3id.org/halo#factualfabrication_26_44",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_044"
+    "@id" : "https://w3id.org/halo#answer_044"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_27_45",
+  "@id" : "https://w3id.org/halo#factualfabrication_27_45",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_045"
+    "@id" : "https://w3id.org/halo#answer_045"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_27_46",
+  "@id" : "https://w3id.org/halo#factualfabrication_27_46",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_046"
+    "@id" : "https://w3id.org/halo#answer_046"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_27_47",
+  "@id" : "https://w3id.org/halo#factualfabrication_27_47",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_047"
+    "@id" : "https://w3id.org/halo#answer_047"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_28_48",
+  "@id" : "https://w3id.org/halo#factualfabrication_28_48",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_048"
+    "@id" : "https://w3id.org/halo#answer_048"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_28_49",
+  "@id" : "https://w3id.org/halo#factualfabrication_28_49",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_049"
+    "@id" : "https://w3id.org/halo#answer_049"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_28_50",
+  "@id" : "https://w3id.org/halo#factualfabrication_28_50",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_050"
+    "@id" : "https://w3id.org/halo#answer_050"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_29_51",
+  "@id" : "https://w3id.org/halo#factualfabrication_29_51",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_051"
+    "@id" : "https://w3id.org/halo#answer_051"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_29_52",
+  "@id" : "https://w3id.org/halo#factualfabrication_29_52",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_052"
+    "@id" : "https://w3id.org/halo#answer_052"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_29_53",
+  "@id" : "https://w3id.org/halo#factualfabrication_29_53",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_053"
+    "@id" : "https://w3id.org/halo#answer_053"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_30_54",
+  "@id" : "https://w3id.org/halo#factualfabrication_30_54",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_054"
+    "@id" : "https://w3id.org/halo#answer_054"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_32_56",
+  "@id" : "https://w3id.org/halo#factualfabrication_32_56",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_056"
+    "@id" : "https://w3id.org/halo#answer_056"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_32_57",
+  "@id" : "https://w3id.org/halo#factualfabrication_32_57",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_057"
+    "@id" : "https://w3id.org/halo#answer_057"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_33_58",
+  "@id" : "https://w3id.org/halo#factualfabrication_33_58",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_058"
+    "@id" : "https://w3id.org/halo#answer_058"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#factualfabrication_33_59",
+  "@id" : "https://w3id.org/halo#factualfabrication_33_59",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_059"
+    "@id" : "https://w3id.org/halo#answer_059"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#factualFabrication"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#instructionInconsistency_13_17",
+  "@id" : "https://w3id.org/halo#instructionInconsistency_13_17",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_017"
+    "@id" : "https://w3id.org/halo#answer_017"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#instructionInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#instructionInconsistency_15_21",
+  "@id" : "https://w3id.org/halo#instructionInconsistency_15_21",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_021"
+    "@id" : "https://w3id.org/halo#answer_021"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#instructionInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#instructionInconsistency_18_27",
+  "@id" : "https://w3id.org/halo#instructionInconsistency_18_27",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_027"
+    "@id" : "https://w3id.org/halo#answer_027"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#instructionInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#isGeneratedBy",
+  "@id" : "https://w3id.org/halo#isGeneratedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://w3id.org/halo/metadata#answers"
@@ -1624,455 +1630,455 @@
     "@id" : "http://w3id.org/halo/metadata#largeLanguageModel"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#logicalInconsistency_19_28",
+  "@id" : "https://w3id.org/halo#logicalInconsistency_19_28",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_028"
+    "@id" : "https://w3id.org/halo#answer_028"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#logicalInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#logicalInconsistency_22_34",
+  "@id" : "https://w3id.org/halo#logicalInconsistency_22_34",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_034"
+    "@id" : "https://w3id.org/halo#answer_034"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#logicalInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#logicalInconsistency_24_38",
+  "@id" : "https://w3id.org/halo#logicalInconsistency_24_38",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_038"
+    "@id" : "https://w3id.org/halo#answer_038"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#logicalInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#logicalInconsistency_24_39",
+  "@id" : "https://w3id.org/halo#logicalInconsistency_24_39",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_039"
+    "@id" : "https://w3id.org/halo#answer_039"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#logicalInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#logicalInconsistency_24_40",
+  "@id" : "https://w3id.org/halo#logicalInconsistency_24_40",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_040"
+    "@id" : "https://w3id.org/halo#answer_040"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#logicalInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#logicalInconsistency_26_43",
+  "@id" : "https://w3id.org/halo#logicalInconsistency_26_43",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#hallucinationGeneratedBy" : [ {
-    "@id" : "https://w3id.org/example#answer_043"
+    "@id" : "https://w3id.org/halo#answer_043"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/hallucination#logicalInconsistency"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_01",
+  "@id" : "https://w3id.org/halo#prompt_01",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   }, {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/halo/metadata#prompts"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_01"
+    "@id" : "https://w3id.org/halo#answer_01"
   }, {
-    "@id" : "https://w3id.org/example#answer_02"
+    "@id" : "https://w3id.org/halo#answer_02"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_010",
+  "@id" : "https://w3id.org/halo#prompt_010",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_013"
+    "@id" : "https://w3id.org/halo#answer_013"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_011",
+  "@id" : "https://w3id.org/halo#prompt_011",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_014"
+    "@id" : "https://w3id.org/halo#answer_014"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_012",
+  "@id" : "https://w3id.org/halo#prompt_012",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   }, {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_015"
+    "@id" : "https://w3id.org/halo#answer_015"
   }, {
-    "@id" : "https://w3id.org/example#answer_016"
+    "@id" : "https://w3id.org/halo#answer_016"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_013",
+  "@id" : "https://w3id.org/halo#prompt_013",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_017"
+    "@id" : "https://w3id.org/halo#answer_017"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_014",
+  "@id" : "https://w3id.org/halo#prompt_014",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_018"
+    "@id" : "https://w3id.org/halo#answer_018"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_015",
+  "@id" : "https://w3id.org/halo#prompt_015",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   }, {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   }, {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_019"
+    "@id" : "https://w3id.org/halo#answer_019"
   }, {
-    "@id" : "https://w3id.org/example#answer_020"
+    "@id" : "https://w3id.org/halo#answer_020"
   }, {
-    "@id" : "https://w3id.org/example#answer_021"
+    "@id" : "https://w3id.org/halo#answer_021"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_016",
+  "@id" : "https://w3id.org/halo#prompt_016",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   }, {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_022"
+    "@id" : "https://w3id.org/halo#answer_022"
   }, {
-    "@id" : "https://w3id.org/example#answer_023"
+    "@id" : "https://w3id.org/halo#answer_023"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_017",
+  "@id" : "https://w3id.org/halo#prompt_017",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   }, {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_024"
+    "@id" : "https://w3id.org/halo#answer_024"
   }, {
-    "@id" : "https://w3id.org/example#answer_025"
+    "@id" : "https://w3id.org/halo#answer_025"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_018",
+  "@id" : "https://w3id.org/halo#prompt_018",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   }, {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_026"
+    "@id" : "https://w3id.org/halo#answer_026"
   }, {
-    "@id" : "https://w3id.org/example#answer_027"
+    "@id" : "https://w3id.org/halo#answer_027"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_019",
+  "@id" : "https://w3id.org/halo#prompt_019",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_028"
+    "@id" : "https://w3id.org/halo#answer_028"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_020",
+  "@id" : "https://w3id.org/halo#prompt_020",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   }, {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_029"
+    "@id" : "https://w3id.org/halo#answer_029"
   }, {
-    "@id" : "https://w3id.org/example#answer_030"
+    "@id" : "https://w3id.org/halo#answer_030"
   }, {
-    "@id" : "https://w3id.org/example#answer_031"
+    "@id" : "https://w3id.org/halo#answer_031"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_021",
+  "@id" : "https://w3id.org/halo#prompt_021",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   }, {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_032"
+    "@id" : "https://w3id.org/halo#answer_032"
   }, {
-    "@id" : "https://w3id.org/example#answer_033"
+    "@id" : "https://w3id.org/halo#answer_033"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_022",
+  "@id" : "https://w3id.org/halo#prompt_022",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   }, {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_034"
+    "@id" : "https://w3id.org/halo#answer_034"
   }, {
-    "@id" : "https://w3id.org/example#answer_035"
+    "@id" : "https://w3id.org/halo#answer_035"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_023",
+  "@id" : "https://w3id.org/halo#prompt_023",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   }, {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_036"
+    "@id" : "https://w3id.org/halo#answer_036"
   }, {
-    "@id" : "https://w3id.org/example#answer_037"
+    "@id" : "https://w3id.org/halo#answer_037"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_024",
+  "@id" : "https://w3id.org/halo#prompt_024",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   }, {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   }, {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_038"
+    "@id" : "https://w3id.org/halo#answer_038"
   }, {
-    "@id" : "https://w3id.org/example#answer_039"
+    "@id" : "https://w3id.org/halo#answer_039"
   }, {
-    "@id" : "https://w3id.org/example#answer_040"
+    "@id" : "https://w3id.org/halo#answer_040"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_025",
+  "@id" : "https://w3id.org/halo#prompt_025",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   }, {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_041"
+    "@id" : "https://w3id.org/halo#answer_041"
   }, {
-    "@id" : "https://w3id.org/example#answer_042"
+    "@id" : "https://w3id.org/halo#answer_042"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_026",
+  "@id" : "https://w3id.org/halo#prompt_026",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   }, {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_043"
+    "@id" : "https://w3id.org/halo#answer_043"
   }, {
-    "@id" : "https://w3id.org/example#answer_044"
+    "@id" : "https://w3id.org/halo#answer_044"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_027",
+  "@id" : "https://w3id.org/halo#prompt_027",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   }, {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   }, {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_045"
+    "@id" : "https://w3id.org/halo#answer_045"
   }, {
-    "@id" : "https://w3id.org/example#answer_046"
+    "@id" : "https://w3id.org/halo#answer_046"
   }, {
-    "@id" : "https://w3id.org/example#answer_047"
+    "@id" : "https://w3id.org/halo#answer_047"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_028",
+  "@id" : "https://w3id.org/halo#prompt_028",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   }, {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   }, {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_048"
+    "@id" : "https://w3id.org/halo#answer_048"
   }, {
-    "@id" : "https://w3id.org/example#answer_049"
+    "@id" : "https://w3id.org/halo#answer_049"
   }, {
-    "@id" : "https://w3id.org/example#answer_050"
+    "@id" : "https://w3id.org/halo#answer_050"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_029",
+  "@id" : "https://w3id.org/halo#prompt_029",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   }, {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   }, {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_051"
+    "@id" : "https://w3id.org/halo#answer_051"
   }, {
-    "@id" : "https://w3id.org/example#answer_052"
+    "@id" : "https://w3id.org/halo#answer_052"
   }, {
-    "@id" : "https://w3id.org/example#answer_053"
+    "@id" : "https://w3id.org/halo#answer_053"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_03",
+  "@id" : "https://w3id.org/halo#prompt_03",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_03"
+    "@id" : "https://w3id.org/halo#answer_03"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_030",
+  "@id" : "https://w3id.org/halo#prompt_030",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_054"
+    "@id" : "https://w3id.org/halo#answer_054"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_031",
+  "@id" : "https://w3id.org/halo#prompt_031",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_055"
+    "@id" : "https://w3id.org/halo#answer_055"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_032",
+  "@id" : "https://w3id.org/halo#prompt_032",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   }, {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_056"
+    "@id" : "https://w3id.org/halo#answer_056"
   }, {
-    "@id" : "https://w3id.org/example#answer_057"
+    "@id" : "https://w3id.org/halo#answer_057"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_033",
+  "@id" : "https://w3id.org/halo#prompt_033",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   }, {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_058"
+    "@id" : "https://w3id.org/halo#answer_058"
   }, {
-    "@id" : "https://w3id.org/example#answer_059"
+    "@id" : "https://w3id.org/halo#answer_059"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_04",
+  "@id" : "https://w3id.org/halo#prompt_04",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_04"
+    "@id" : "https://w3id.org/halo#answer_04"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_05",
+  "@id" : "https://w3id.org/halo#prompt_05",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   }, {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   }, {
-    "@id" : "https://w3id.org/example#GPT-3.5"
+    "@id" : "https://w3id.org/halo#GPT-3.5"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_05"
+    "@id" : "https://w3id.org/halo#answer_05"
   }, {
-    "@id" : "https://w3id.org/example#answer_06"
+    "@id" : "https://w3id.org/halo#answer_06"
   }, {
-    "@id" : "https://w3id.org/example#answer_07"
+    "@id" : "https://w3id.org/halo#answer_07"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_06",
+  "@id" : "https://w3id.org/halo#prompt_06",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_08"
+    "@id" : "https://w3id.org/halo#answer_08"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_07",
+  "@id" : "https://w3id.org/halo#prompt_07",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   }, {
-    "@id" : "https://w3id.org/example#Claude"
+    "@id" : "https://w3id.org/halo#Claude"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_010"
+    "@id" : "https://w3id.org/halo#answer_010"
   }, {
-    "@id" : "https://w3id.org/example#answer_09"
+    "@id" : "https://w3id.org/halo#answer_09"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_08",
+  "@id" : "https://w3id.org/halo#prompt_08",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_011"
+    "@id" : "https://w3id.org/halo#answer_011"
   } ]
 }, {
-  "@id" : "https://w3id.org/example#prompt_09",
+  "@id" : "https://w3id.org/halo#prompt_09",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://metadata.com#wasAskedBy" : [ {
-    "@id" : "https://w3id.org/example#BARD"
+    "@id" : "https://w3id.org/halo#BARD"
   } ],
   "https://w3id.org/example#associatedWithAnswer" : [ {
-    "@id" : "https://w3id.org/example#answer_012"
+    "@id" : "https://w3id.org/halo#answer_012"
   } ]
 }, {
   "@id" : "https://w3id.org/mod#createdWith",

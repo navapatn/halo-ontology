@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/example#"
-     xml:base="https://w3id.org/example"
+<rdf:RDF xmlns="https://w3id.org/halo#"
+     xml:base="https://w3id.org/halo"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:mod="https://w3id.org/mod#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -11,14 +11,14 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:example="https://w3id.org/example#"
      xmlns:metadata="http://metadata.com#">
-    <owl:Ontology rdf:about="https://w3id.org/example#">
-        <owl:versionIRI rdf:resource="https://w3id.org/example#"/>
+    <owl:Ontology rdf:about="https://w3id.org/halo#">
+        <owl:versionIRI rdf:resource="https://w3id.org/halo#"/>
         <dc:creator>Navapat Nananukul</dc:creator>
         <dc:description xml:lang="en">-</dc:description>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dc:title xml:lang="en">HALO: An Ontology for Representing Hallucinations in Generative Models</dc:title>
         <vann:preferredNamespacePrefix>choosenprefix</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/example#"/>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/halo#"/>
         <owl:versionInfo>0.0.1</owl:versionInfo>
         <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
     </owl:Ontology>
@@ -93,6 +93,20 @@
     
 
 
+    <!-- https://w3id.org/example#associatedWithAnswer -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/example#associatedWithAnswer"/>
+    
+
+
+    <!-- https://w3id.org/example#isGeneratedBy -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/example#isGeneratedBy"/>
+    
+
+
     <!-- https://w3id.org/mod#createdWith -->
 
 
@@ -149,20 +163,20 @@
     
 
 
-    <!-- https://w3id.org/example#associatedWithAnswer -->
+    <!-- https://w3id.org/halo#associatedWithAnswer -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/example#associatedWithAnswer">
+    <owl:ObjectProperty rdf:about="https://w3id.org/halo#associatedWithAnswer">
         <rdfs:domain rdf:resource="http://w3id.org/halo/metadata#prompts"/>
         <rdfs:range rdf:resource="http://w3id.org/halo/metadata#answers"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/example#isGeneratedBy -->
+    <!-- https://w3id.org/halo#isGeneratedBy -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/example#isGeneratedBy">
+    <owl:ObjectProperty rdf:about="https://w3id.org/halo#isGeneratedBy">
         <rdfs:domain rdf:resource="http://w3id.org/halo/metadata#answers"/>
         <rdfs:range rdf:resource="http://w3id.org/halo/metadata#largeLanguageModel"/>
     </owl:ObjectProperty>
@@ -431,2045 +445,2045 @@
     
 
 
-    <!-- https://w3id.org/example#BARD -->
+    <!-- https://w3id.org/halo#BARD -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#BARD">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#BARD">
         <rdf:type rdf:resource="http://w3id.org/halo/metadata#largeLanguageModel"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#Claude -->
+    <!-- https://w3id.org/halo#Claude -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#Claude">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#Claude">
         <rdf:type rdf:resource="http://w3id.org/halo/metadata#largeLanguageModel"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#GPT-3.5 -->
+    <!-- https://w3id.org/halo#GPT-3.5 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#GPT-3.5">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#GPT-3.5">
         <rdf:type rdf:resource="http://w3id.org/halo/metadata#largeLanguageModel"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_01 -->
+    <!-- https://w3id.org/halo#answer_01 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_01">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_01">
         <rdf:type rdf:resource="http://w3id.org/halo/metadata#answers"/>
-        <isGeneratedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_010 -->
+    <!-- https://w3id.org/halo#answer_010 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_010">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#Claude"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_010">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#Claude"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_011 -->
+    <!-- https://w3id.org/halo#answer_011 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_011">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_011">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_012 -->
+    <!-- https://w3id.org/halo#answer_012 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_012">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_012">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_013 -->
+    <!-- https://w3id.org/halo#answer_013 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_013">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#Claude"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_013">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#Claude"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_014 -->
+    <!-- https://w3id.org/halo#answer_014 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_014">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_014">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_015 -->
+    <!-- https://w3id.org/halo#answer_015 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_015">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_015">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_016 -->
+    <!-- https://w3id.org/halo#answer_016 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_016">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_016">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_017 -->
+    <!-- https://w3id.org/halo#answer_017 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_017">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_017">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_018 -->
+    <!-- https://w3id.org/halo#answer_018 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_018">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_018">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_019 -->
+    <!-- https://w3id.org/halo#answer_019 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_019">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_019">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_02 -->
+    <!-- https://w3id.org/halo#answer_02 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_02">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_02">
         <rdf:type rdf:resource="http://w3id.org/halo/metadata#answers"/>
-        <isGeneratedBy rdf:resource="https://w3id.org/example#Claude"/>
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#Claude"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_020 -->
+    <!-- https://w3id.org/halo#answer_020 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_020">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_020">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_021 -->
+    <!-- https://w3id.org/halo#answer_021 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_021">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#Claude"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_021">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#Claude"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_022 -->
+    <!-- https://w3id.org/halo#answer_022 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_022">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_022">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_023 -->
+    <!-- https://w3id.org/halo#answer_023 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_023">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#Claude"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_023">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#Claude"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_024 -->
+    <!-- https://w3id.org/halo#answer_024 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_024">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_024">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_025 -->
+    <!-- https://w3id.org/halo#answer_025 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_025">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#Claude"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_025">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#Claude"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_026 -->
+    <!-- https://w3id.org/halo#answer_026 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_026">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_026">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_027 -->
+    <!-- https://w3id.org/halo#answer_027 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_027">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_027">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_028 -->
+    <!-- https://w3id.org/halo#answer_028 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_028">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_028">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_029 -->
+    <!-- https://w3id.org/halo#answer_029 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_029">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_029">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_03 -->
+    <!-- https://w3id.org/halo#answer_03 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_03">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_03">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_030 -->
+    <!-- https://w3id.org/halo#answer_030 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_030">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_030">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_031 -->
+    <!-- https://w3id.org/halo#answer_031 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_031">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#Claude"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_031">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#Claude"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_032 -->
+    <!-- https://w3id.org/halo#answer_032 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_032">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_032">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_033 -->
+    <!-- https://w3id.org/halo#answer_033 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_033">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_033">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_034 -->
+    <!-- https://w3id.org/halo#answer_034 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_034">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_034">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_035 -->
+    <!-- https://w3id.org/halo#answer_035 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_035">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#Claude"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_035">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#Claude"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_036 -->
+    <!-- https://w3id.org/halo#answer_036 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_036">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_036">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_037 -->
+    <!-- https://w3id.org/halo#answer_037 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_037">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#Claude"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_037">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#Claude"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_038 -->
+    <!-- https://w3id.org/halo#answer_038 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_038">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_038">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_039 -->
+    <!-- https://w3id.org/halo#answer_039 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_039">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_039">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_04 -->
+    <!-- https://w3id.org/halo#answer_04 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_04">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#Claude"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_04">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#Claude"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_040 -->
+    <!-- https://w3id.org/halo#answer_040 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_040">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#Claude"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_040">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#Claude"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_041 -->
+    <!-- https://w3id.org/halo#answer_041 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_041">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_041">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_042 -->
+    <!-- https://w3id.org/halo#answer_042 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_042">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_042">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_043 -->
+    <!-- https://w3id.org/halo#answer_043 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_043">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_043">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_044 -->
+    <!-- https://w3id.org/halo#answer_044 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_044">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_044">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_045 -->
+    <!-- https://w3id.org/halo#answer_045 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_045">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_045">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_046 -->
+    <!-- https://w3id.org/halo#answer_046 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_046">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_046">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_047 -->
+    <!-- https://w3id.org/halo#answer_047 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_047">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#Claude"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_047">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#Claude"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_048 -->
+    <!-- https://w3id.org/halo#answer_048 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_048">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_048">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_049 -->
+    <!-- https://w3id.org/halo#answer_049 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_049">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_049">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_05 -->
+    <!-- https://w3id.org/halo#answer_05 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_05">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_05">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_050 -->
+    <!-- https://w3id.org/halo#answer_050 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_050">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#Claude"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_050">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#Claude"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_051 -->
+    <!-- https://w3id.org/halo#answer_051 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_051">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_051">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_052 -->
+    <!-- https://w3id.org/halo#answer_052 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_052">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_052">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_053 -->
+    <!-- https://w3id.org/halo#answer_053 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_053">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#Claude"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_053">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#Claude"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_054 -->
+    <!-- https://w3id.org/halo#answer_054 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_054">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_054">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_055 -->
+    <!-- https://w3id.org/halo#answer_055 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_055">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_055">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_056 -->
+    <!-- https://w3id.org/halo#answer_056 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_056">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_056">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_057 -->
+    <!-- https://w3id.org/halo#answer_057 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_057">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#Claude"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_057">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#Claude"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_058 -->
+    <!-- https://w3id.org/halo#answer_058 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_058">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_058">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_059 -->
+    <!-- https://w3id.org/halo#answer_059 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_059">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_059">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_06 -->
+    <!-- https://w3id.org/halo#answer_06 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_06">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#Claude"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_06">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#Claude"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_07 -->
+    <!-- https://w3id.org/halo#answer_07 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_07">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_07">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_08 -->
+    <!-- https://w3id.org/halo#answer_08 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_08">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_08">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#answer_09 -->
+    <!-- https://w3id.org/halo#answer_09 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#answer_09">
-        <isGeneratedBy rdf:resource="https://w3id.org/example#BARD"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#answer_09">
+        <example:isGeneratedBy rdf:resource="https://w3id.org/halo#BARD"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#contextInconsistency_01_02 -->
+    <!-- https://w3id.org/halo#contextInconsistency_01_02 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#contextInconsistency_01_02">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#contextInconsistency_01_02">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#contextInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_02"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_02"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#contextInconsistency_04_04 -->
+    <!-- https://w3id.org/halo#contextInconsistency_04_04 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#contextInconsistency_04_04">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#contextInconsistency_04_04">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#contextInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_04"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_04"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#contextInconsistency_08_11 -->
+    <!-- https://w3id.org/halo#contextInconsistency_08_11 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#contextInconsistency_08_11">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#contextInconsistency_08_11">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#contextInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_011"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_011"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#contextInconsistency_10_13 -->
+    <!-- https://w3id.org/halo#contextInconsistency_10_13 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#contextInconsistency_10_13">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#contextInconsistency_10_13">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#contextInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_013"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_013"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#contextInconsistency_13_17 -->
+    <!-- https://w3id.org/halo#contextInconsistency_13_17 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#contextInconsistency_13_17">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#contextInconsistency_13_17">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#contextInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_017"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_017"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#contextInconsistency_18_26 -->
+    <!-- https://w3id.org/halo#contextInconsistency_18_26 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#contextInconsistency_18_26">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#contextInconsistency_18_26">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#contextInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_026"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_026"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#contextInconsistency_18_27 -->
+    <!-- https://w3id.org/halo#contextInconsistency_18_27 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#contextInconsistency_18_27">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#contextInconsistency_18_27">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#contextInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_027"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_027"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#contextInconsistency_23_36 -->
+    <!-- https://w3id.org/halo#contextInconsistency_23_36 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#contextInconsistency_23_36">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#contextInconsistency_23_36">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#contextInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_036"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_036"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#contextInconsistency_24_38 -->
+    <!-- https://w3id.org/halo#contextInconsistency_24_38 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#contextInconsistency_24_38">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#contextInconsistency_24_38">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#contextInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_038"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_038"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#contextInconsistency_24_39 -->
+    <!-- https://w3id.org/halo#contextInconsistency_24_39 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#contextInconsistency_24_39">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#contextInconsistency_24_39">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#contextInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_039"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_039"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#contextInconsistency_24_40 -->
+    <!-- https://w3id.org/halo#contextInconsistency_24_40 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#contextInconsistency_24_40">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#contextInconsistency_24_40">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#contextInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_040"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_040"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#contextInconsistency_30_54 -->
+    <!-- https://w3id.org/halo#contextInconsistency_30_54 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#contextInconsistency_30_54">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#contextInconsistency_30_54">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#contextInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_054"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_054"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_01_01 -->
+    <!-- https://w3id.org/halo#factualInconsistency_01_01 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_01_01">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_01_01">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_01"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_01"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_01_02 -->
+    <!-- https://w3id.org/halo#factualInconsistency_01_02 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_01_02">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_01_02">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_02"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_02"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_03_03 -->
+    <!-- https://w3id.org/halo#factualInconsistency_03_03 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_03_03">
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_03"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_03_03">
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_03"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_04_04 -->
+    <!-- https://w3id.org/halo#factualInconsistency_04_04 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_04_04">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_04_04">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_04"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_04"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_05_05 -->
+    <!-- https://w3id.org/halo#factualInconsistency_05_05 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_05_05">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_05_05">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_05"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_05"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_05_06 -->
+    <!-- https://w3id.org/halo#factualInconsistency_05_06 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_05_06">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_05_06">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_06"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_06"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_05_07 -->
+    <!-- https://w3id.org/halo#factualInconsistency_05_07 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_05_07">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_05_07">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_07"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_07"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_06_08 -->
+    <!-- https://w3id.org/halo#factualInconsistency_06_08 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_06_08">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_06_08">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_08"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_08"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_07_09 -->
+    <!-- https://w3id.org/halo#factualInconsistency_07_09 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_07_09">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_07_09">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_09"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_09"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_07_10 -->
+    <!-- https://w3id.org/halo#factualInconsistency_07_10 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_07_10">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_07_10">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_010"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_010"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_08_11 -->
+    <!-- https://w3id.org/halo#factualInconsistency_08_11 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_08_11">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_08_11">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_011"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_011"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_09_12 -->
+    <!-- https://w3id.org/halo#factualInconsistency_09_12 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_09_12">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_09_12">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_012"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_012"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_10_13 -->
+    <!-- https://w3id.org/halo#factualInconsistency_10_13 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_10_13">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_10_13">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_013"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_013"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_11_14 -->
+    <!-- https://w3id.org/halo#factualInconsistency_11_14 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_11_14">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_11_14">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_014"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_014"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_12_15 -->
+    <!-- https://w3id.org/halo#factualInconsistency_12_15 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_12_15">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_12_15">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_015"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_015"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_12_16 -->
+    <!-- https://w3id.org/halo#factualInconsistency_12_16 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_12_16">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_12_16">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_016"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_016"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_14_18 -->
+    <!-- https://w3id.org/halo#factualInconsistency_14_18 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_14_18">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_14_18">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_018"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_018"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_15_19 -->
+    <!-- https://w3id.org/halo#factualInconsistency_15_19 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_15_19">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_15_19">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_019"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_019"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_15_20 -->
+    <!-- https://w3id.org/halo#factualInconsistency_15_20 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_15_20">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_15_20">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_020"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_020"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_15_21 -->
+    <!-- https://w3id.org/halo#factualInconsistency_15_21 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_15_21">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_15_21">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_021"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_021"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_16_22 -->
+    <!-- https://w3id.org/halo#factualInconsistency_16_22 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_16_22">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_16_22">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_022"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_022"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_16_23 -->
+    <!-- https://w3id.org/halo#factualInconsistency_16_23 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_16_23">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_16_23">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_023"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_023"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_17_24 -->
+    <!-- https://w3id.org/halo#factualInconsistency_17_24 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_17_24">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_17_24">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_024"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_024"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_17_25 -->
+    <!-- https://w3id.org/halo#factualInconsistency_17_25 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_17_25">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_17_25">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_025"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_025"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_20_30 -->
+    <!-- https://w3id.org/halo#factualInconsistency_20_30 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_20_30">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_20_30">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_030"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_030"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_21_32 -->
+    <!-- https://w3id.org/halo#factualInconsistency_21_32 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_21_32">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_21_32">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_032"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_032"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_21_33 -->
+    <!-- https://w3id.org/halo#factualInconsistency_21_33 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_21_33">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_21_33">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_033"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_033"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_22_34 -->
+    <!-- https://w3id.org/halo#factualInconsistency_22_34 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_22_34">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_22_34">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_034"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_034"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_22_35 -->
+    <!-- https://w3id.org/halo#factualInconsistency_22_35 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_22_35">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_22_35">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_035"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_035"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_23_36 -->
+    <!-- https://w3id.org/halo#factualInconsistency_23_36 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_23_36">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_23_36">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_036"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_036"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_23_37 -->
+    <!-- https://w3id.org/halo#factualInconsistency_23_37 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_23_37">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_23_37">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_037"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_037"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_24_38 -->
+    <!-- https://w3id.org/halo#factualInconsistency_24_38 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_24_38">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_24_38">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_038"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_038"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_24_39 -->
+    <!-- https://w3id.org/halo#factualInconsistency_24_39 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_24_39">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_24_39">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_039"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_039"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_24_40 -->
+    <!-- https://w3id.org/halo#factualInconsistency_24_40 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_24_40">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_24_40">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_040"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_040"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_25_41 -->
+    <!-- https://w3id.org/halo#factualInconsistency_25_41 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_25_41">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_25_41">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_041"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_041"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_25_42 -->
+    <!-- https://w3id.org/halo#factualInconsistency_25_42 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_25_42">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_25_42">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_042"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_042"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_26_44 -->
+    <!-- https://w3id.org/halo#factualInconsistency_26_44 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_26_44">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_26_44">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_044"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_044"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_27_45 -->
+    <!-- https://w3id.org/halo#factualInconsistency_27_45 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_27_45">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_27_45">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_045"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_045"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_27_46 -->
+    <!-- https://w3id.org/halo#factualInconsistency_27_46 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_27_46">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_27_46">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_046"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_046"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_27_47 -->
+    <!-- https://w3id.org/halo#factualInconsistency_27_47 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_27_47">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_27_47">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_047"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_047"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_28_48 -->
+    <!-- https://w3id.org/halo#factualInconsistency_28_48 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_28_48">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_28_48">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_048"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_048"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_28_49 -->
+    <!-- https://w3id.org/halo#factualInconsistency_28_49 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_28_49">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_28_49">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_049"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_049"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_28_50 -->
+    <!-- https://w3id.org/halo#factualInconsistency_28_50 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_28_50">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_28_50">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_050"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_050"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_29_51 -->
+    <!-- https://w3id.org/halo#factualInconsistency_29_51 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_29_51">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_29_51">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_051"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_051"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_29_52 -->
+    <!-- https://w3id.org/halo#factualInconsistency_29_52 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_29_52">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_29_52">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_052"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_052"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_29_53 -->
+    <!-- https://w3id.org/halo#factualInconsistency_29_53 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_29_53">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_29_53">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_053"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_053"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_30_54 -->
+    <!-- https://w3id.org/halo#factualInconsistency_30_54 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_30_54">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_30_54">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_054"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_054"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_31_55 -->
+    <!-- https://w3id.org/halo#factualInconsistency_31_55 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_31_55">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_31_55">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_055"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_055"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualInconsistency_32_56 -->
+    <!-- https://w3id.org/halo#factualInconsistency_32_56 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualInconsistency_32_56">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualInconsistency_32_56">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_056"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_056"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_01_01 -->
+    <!-- https://w3id.org/halo#factualfabrication_01_01 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_01_01">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_01_01">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_01"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_01"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_01_02 -->
+    <!-- https://w3id.org/halo#factualfabrication_01_02 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_01_02">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_01_02">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_02"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_02"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_03_03 -->
+    <!-- https://w3id.org/halo#factualfabrication_03_03 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_03_03">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_03_03">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_03"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_03"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_04_04 -->
+    <!-- https://w3id.org/halo#factualfabrication_04_04 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_04_04">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_04_04">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_04"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_04"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_05_05 -->
+    <!-- https://w3id.org/halo#factualfabrication_05_05 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_05_05">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_05_05">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_05"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_05"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_05_06 -->
+    <!-- https://w3id.org/halo#factualfabrication_05_06 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_05_06">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_05_06">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_06"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_06"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_05_07 -->
+    <!-- https://w3id.org/halo#factualfabrication_05_07 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_05_07">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_05_07">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_07"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_07"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_07_09 -->
+    <!-- https://w3id.org/halo#factualfabrication_07_09 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_07_09">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_07_09">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_09"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_09"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_07_10 -->
+    <!-- https://w3id.org/halo#factualfabrication_07_10 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_07_10">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_07_10">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_010"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_010"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_08_11 -->
+    <!-- https://w3id.org/halo#factualfabrication_08_11 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_08_11">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_08_11">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_011"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_011"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_09_12 -->
+    <!-- https://w3id.org/halo#factualfabrication_09_12 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_09_12">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_09_12">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_012"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_012"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_10_13 -->
+    <!-- https://w3id.org/halo#factualfabrication_10_13 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_10_13">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_10_13">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_013"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_013"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_11_14 -->
+    <!-- https://w3id.org/halo#factualfabrication_11_14 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_11_14">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_11_14">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_014"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_014"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_12_16 -->
+    <!-- https://w3id.org/halo#factualfabrication_12_16 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_12_16">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_12_16">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_016"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_016"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_14_18 -->
+    <!-- https://w3id.org/halo#factualfabrication_14_18 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_14_18">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_14_18">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_018"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_018"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_15_19 -->
+    <!-- https://w3id.org/halo#factualfabrication_15_19 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_15_19">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_15_19">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_019"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_019"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_15_20 -->
+    <!-- https://w3id.org/halo#factualfabrication_15_20 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_15_20">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_15_20">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_020"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_020"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_15_21 -->
+    <!-- https://w3id.org/halo#factualfabrication_15_21 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_15_21">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_15_21">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_021"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_021"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_16_22 -->
+    <!-- https://w3id.org/halo#factualfabrication_16_22 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_16_22">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_16_22">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_022"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_022"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_16_23 -->
+    <!-- https://w3id.org/halo#factualfabrication_16_23 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_16_23">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_16_23">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_023"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_023"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_18_26 -->
+    <!-- https://w3id.org/halo#factualfabrication_18_26 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_18_26">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_18_26">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_026"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_026"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_20_30 -->
+    <!-- https://w3id.org/halo#factualfabrication_20_30 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_20_30">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_20_30">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_030"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_030"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_21_32 -->
+    <!-- https://w3id.org/halo#factualfabrication_21_32 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_21_32">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_21_32">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_032"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_032"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_21_33 -->
+    <!-- https://w3id.org/halo#factualfabrication_21_33 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_21_33">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_21_33">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_033"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_033"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_25_41 -->
+    <!-- https://w3id.org/halo#factualfabrication_25_41 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_25_41">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_25_41">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_041"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_041"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_25_42 -->
+    <!-- https://w3id.org/halo#factualfabrication_25_42 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_25_42">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_25_42">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_042"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_042"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_26_44 -->
+    <!-- https://w3id.org/halo#factualfabrication_26_44 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_26_44">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_26_44">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_044"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_044"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_27_45 -->
+    <!-- https://w3id.org/halo#factualfabrication_27_45 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_27_45">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_27_45">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_045"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_045"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_27_46 -->
+    <!-- https://w3id.org/halo#factualfabrication_27_46 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_27_46">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_27_46">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_046"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_046"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_27_47 -->
+    <!-- https://w3id.org/halo#factualfabrication_27_47 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_27_47">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_27_47">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_047"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_047"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_28_48 -->
+    <!-- https://w3id.org/halo#factualfabrication_28_48 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_28_48">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_28_48">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_048"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_048"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_28_49 -->
+    <!-- https://w3id.org/halo#factualfabrication_28_49 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_28_49">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_28_49">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_049"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_049"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_28_50 -->
+    <!-- https://w3id.org/halo#factualfabrication_28_50 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_28_50">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_28_50">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_050"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_050"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_29_51 -->
+    <!-- https://w3id.org/halo#factualfabrication_29_51 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_29_51">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_29_51">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_051"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_051"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_29_52 -->
+    <!-- https://w3id.org/halo#factualfabrication_29_52 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_29_52">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_29_52">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_052"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_052"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_29_53 -->
+    <!-- https://w3id.org/halo#factualfabrication_29_53 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_29_53">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_29_53">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_053"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_053"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_30_54 -->
+    <!-- https://w3id.org/halo#factualfabrication_30_54 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_30_54">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_30_54">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_054"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_054"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_32_56 -->
+    <!-- https://w3id.org/halo#factualfabrication_32_56 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_32_56">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_32_56">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_056"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_056"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_32_57 -->
+    <!-- https://w3id.org/halo#factualfabrication_32_57 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_32_57">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_32_57">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_057"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_057"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_33_58 -->
+    <!-- https://w3id.org/halo#factualfabrication_33_58 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_33_58">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_33_58">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_058"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_058"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#factualfabrication_33_59 -->
+    <!-- https://w3id.org/halo#factualfabrication_33_59 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#factualfabrication_33_59">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#factualfabrication_33_59">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#factualFabrication"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_059"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_059"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#instructionInconsistency_13_17 -->
+    <!-- https://w3id.org/halo#instructionInconsistency_13_17 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#instructionInconsistency_13_17">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#instructionInconsistency_13_17">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#instructionInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_017"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_017"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#instructionInconsistency_15_21 -->
+    <!-- https://w3id.org/halo#instructionInconsistency_15_21 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#instructionInconsistency_15_21">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#instructionInconsistency_15_21">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#instructionInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_021"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_021"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#instructionInconsistency_18_27 -->
+    <!-- https://w3id.org/halo#instructionInconsistency_18_27 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#instructionInconsistency_18_27">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#instructionInconsistency_18_27">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#instructionInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_027"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_027"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#logicalInconsistency_19_28 -->
+    <!-- https://w3id.org/halo#logicalInconsistency_19_28 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#logicalInconsistency_19_28">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#logicalInconsistency_19_28">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#logicalInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_028"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_028"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#logicalInconsistency_22_34 -->
+    <!-- https://w3id.org/halo#logicalInconsistency_22_34 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#logicalInconsistency_22_34">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#logicalInconsistency_22_34">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#logicalInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_034"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_034"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#logicalInconsistency_24_38 -->
+    <!-- https://w3id.org/halo#logicalInconsistency_24_38 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#logicalInconsistency_24_38">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#logicalInconsistency_24_38">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#logicalInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_038"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_038"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#logicalInconsistency_24_39 -->
+    <!-- https://w3id.org/halo#logicalInconsistency_24_39 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#logicalInconsistency_24_39">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#logicalInconsistency_24_39">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#logicalInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_039"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_039"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#logicalInconsistency_24_40 -->
+    <!-- https://w3id.org/halo#logicalInconsistency_24_40 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#logicalInconsistency_24_40">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#logicalInconsistency_24_40">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#logicalInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_040"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_040"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#logicalInconsistency_26_43 -->
+    <!-- https://w3id.org/halo#logicalInconsistency_26_43 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#logicalInconsistency_26_43">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#logicalInconsistency_26_43">
         <rdf:type rdf:resource="http://w3id.org/halo/hallucination#logicalInconsistency"/>
-        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/example#answer_043"/>
+        <metadata:hallucinationGeneratedBy rdf:resource="https://w3id.org/halo#answer_043"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_01 -->
+    <!-- https://w3id.org/halo#prompt_01 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_01">
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_01">
         <rdf:type rdf:resource="http://w3id.org/halo/metadata#prompts"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#Claude"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_01"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_02"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#Claude"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_01"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_02"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_010 -->
+    <!-- https://w3id.org/halo#prompt_010 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_010">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#Claude"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_013"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_010">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#Claude"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_013"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_011 -->
+    <!-- https://w3id.org/halo#prompt_011 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_011">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_014"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_011">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_014"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_012 -->
+    <!-- https://w3id.org/halo#prompt_012 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_012">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_015"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_016"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_012">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_015"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_016"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_013 -->
+    <!-- https://w3id.org/halo#prompt_013 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_013">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_017"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_013">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_017"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_014 -->
+    <!-- https://w3id.org/halo#prompt_014 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_014">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_018"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_014">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_018"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_015 -->
+    <!-- https://w3id.org/halo#prompt_015 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_015">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#Claude"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_019"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_020"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_021"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_015">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#Claude"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_019"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_020"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_021"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_016 -->
+    <!-- https://w3id.org/halo#prompt_016 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_016">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#Claude"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_022"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_023"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_016">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#Claude"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_022"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_023"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_017 -->
+    <!-- https://w3id.org/halo#prompt_017 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_017">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#Claude"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_024"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_025"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_017">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#Claude"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_024"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_025"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_018 -->
+    <!-- https://w3id.org/halo#prompt_018 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_018">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#Claude"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_026"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_027"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_018">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#Claude"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_026"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_027"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_019 -->
+    <!-- https://w3id.org/halo#prompt_019 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_019">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_028"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_019">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_028"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_020 -->
+    <!-- https://w3id.org/halo#prompt_020 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_020">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#Claude"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_029"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_030"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_031"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_020">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#Claude"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_029"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_030"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_031"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_021 -->
+    <!-- https://w3id.org/halo#prompt_021 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_021">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_032"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_033"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_021">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_032"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_033"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_022 -->
+    <!-- https://w3id.org/halo#prompt_022 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_022">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#Claude"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_034"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_035"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_022">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#Claude"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_034"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_035"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_023 -->
+    <!-- https://w3id.org/halo#prompt_023 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_023">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#Claude"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_036"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_037"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_023">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#Claude"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_036"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_037"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_024 -->
+    <!-- https://w3id.org/halo#prompt_024 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_024">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#Claude"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_038"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_039"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_040"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_024">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#Claude"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_038"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_039"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_040"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_025 -->
+    <!-- https://w3id.org/halo#prompt_025 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_025">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_041"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_042"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_025">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_041"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_042"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_026 -->
+    <!-- https://w3id.org/halo#prompt_026 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_026">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_043"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_044"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_026">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_043"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_044"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_027 -->
+    <!-- https://w3id.org/halo#prompt_027 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_027">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#Claude"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_045"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_046"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_047"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_027">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#Claude"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_045"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_046"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_047"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_028 -->
+    <!-- https://w3id.org/halo#prompt_028 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_028">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#Claude"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_048"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_049"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_050"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_028">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#Claude"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_048"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_049"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_050"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_029 -->
+    <!-- https://w3id.org/halo#prompt_029 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_029">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#Claude"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_051"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_052"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_053"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_029">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#Claude"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_051"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_052"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_053"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_03 -->
+    <!-- https://w3id.org/halo#prompt_03 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_03">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_03"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_03">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_03"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_030 -->
+    <!-- https://w3id.org/halo#prompt_030 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_030">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_054"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_030">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_054"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_031 -->
+    <!-- https://w3id.org/halo#prompt_031 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_031">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_055"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_031">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_055"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_032 -->
+    <!-- https://w3id.org/halo#prompt_032 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_032">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#Claude"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_056"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_057"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_032">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#Claude"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_056"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_057"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_033 -->
+    <!-- https://w3id.org/halo#prompt_033 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_033">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_058"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_059"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_033">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_058"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_059"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_04 -->
+    <!-- https://w3id.org/halo#prompt_04 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_04">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#Claude"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_04"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_04">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#Claude"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_04"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_05 -->
+    <!-- https://w3id.org/halo#prompt_05 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_05">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#Claude"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#GPT-3.5"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_05"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_06"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_07"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_05">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#Claude"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#GPT-3.5"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_05"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_06"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_07"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_06 -->
+    <!-- https://w3id.org/halo#prompt_06 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_06">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_08"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_06">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_08"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_07 -->
+    <!-- https://w3id.org/halo#prompt_07 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_07">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#Claude"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_010"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_09"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_07">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#Claude"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_010"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_09"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_08 -->
+    <!-- https://w3id.org/halo#prompt_08 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_08">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_011"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_08">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_011"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/example#prompt_09 -->
+    <!-- https://w3id.org/halo#prompt_09 -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/example#prompt_09">
-        <metadata:wasAskedBy rdf:resource="https://w3id.org/example#BARD"/>
-        <associatedWithAnswer rdf:resource="https://w3id.org/example#answer_012"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/halo#prompt_09">
+        <metadata:wasAskedBy rdf:resource="https://w3id.org/halo#BARD"/>
+        <example:associatedWithAnswer rdf:resource="https://w3id.org/halo#answer_012"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
