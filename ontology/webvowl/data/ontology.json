@@ -2,7 +2,7 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "undefined" ],
-    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://w3id.org/halo/metadata", "http://www.w3.org/2000/01/rdf-schema", "http://metadata.com", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/halo", "http://w3id.org/halo/hallucination" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://w3id.org/halo/metadata", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "http://metadata.com", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/halo", "http://xmlns.com/foaf/0.1", "http://w3id.org/halo/hallucination" ],
     "title" : {
       "en" : "HALO: An Ontology for Representing Hallucinations in Generative Models"
     },
@@ -37,17 +37,17 @@
         "value" : "choosenprefix",
         "type" : "label"
       } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "https://w3id.org/halo#",
-        "type" : "iri"
-      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "0.0.1",
         "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/halo#",
+        "type" : "iri"
       } ],
       "title" : [ {
         "identifier" : "title",
@@ -62,73 +62,136 @@
     "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
-    "type" : "owl:Class"
-  }, {
     "id" : "13",
     "type" : "owl:Class"
   }, {
-    "id" : "20",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "35",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "4",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "2",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "36",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "37",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "38",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "17",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "14",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "31",
+    "id" : "12",
     "type" : "owl:Class"
   }, {
     "id" : "39",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "7",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "6",
-    "type" : "owl:Class"
-  }, {
-    "id" : "11",
-    "type" : "owl:Class"
-  }, {
-    "id" : "16",
-    "type" : "owl:Class"
-  }, {
-    "id" : "29",
     "type" : "owl:Class"
   }, {
     "id" : "1",
     "type" : "owl:Class"
   }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
     "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
     "type" : "owl:Class"
   }, {
     "id" : "18",
     "type" : "owl:Class"
   }, {
-    "id" : "10",
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "121",
+    "type" : "owl:Class"
+  }, {
+    "id" : "122",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
+    "iri" : "https://schema.org/character",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "character"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
     "iri" : "http://w3id.org/halo/hallucination#factualityHallucination",
     "baseIri" : "http://w3id.org/halo/hallucination",
     "instances" : 0,
@@ -136,21 +199,28 @@
       "IRI-based" : "factualityHallucination",
       "undefined" : "factuality Hallucination"
     },
-    "subClasses" : [ "10", "11" ],
+    "subClasses" : [ "15", "16" ],
     "attributes" : [ "external" ],
-    "id" : "8",
-    "superClasses" : [ "9" ]
+    "id" : "13",
+    "superClasses" : [ "14" ]
   }, {
-    "iri" : "http://w3id.org/halo/hallucination#LLMsHallucination",
-    "baseIri" : "http://w3id.org/halo/hallucination",
+    "iri" : "https://schema.org/Book",
+    "baseIri" : "https://schema.org",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "LLMsHallucination",
-      "undefined" : "L L Ms Hallucination"
+      "IRI-based" : "Book"
     },
-    "subClasses" : [ "18", "8" ],
     "attributes" : [ "external" ],
-    "id" : "9"
+    "id" : "12"
+  }, {
+    "iri" : "https://schema.org/SolveMathAction",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SolveMathAction"
+    },
+    "attributes" : [ "external" ],
+    "id" : "39"
   }, {
     "iri" : "http://w3id.org/halo/metadata/generativeAI",
     "baseIri" : "http://w3id.org/halo/metadata",
@@ -159,72 +229,27 @@
       "IRI-based" : "generativeAI",
       "undefined" : "generative A I"
     },
-    "subClasses" : [ "16" ],
+    "subClasses" : [ "30" ],
     "attributes" : [ "external" ],
-    "id" : "13"
+    "id" : "1"
   }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "20",
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
     "label" : {
-      "undefined" : "Thing"
-    }
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "35",
+    "iri" : "https://schema.org/DefinedTerm",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
     "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#date",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "4",
-    "label" : {
-      "IRI-based" : "date"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#int",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "2",
-    "label" : {
-      "IRI-based" : "int"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#int",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "36",
-    "label" : {
-      "IRI-based" : "int"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "37",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "38",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "17",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "14",
-    "label" : {
-      "IRI-based" : "string"
-    }
+      "IRI-based" : "DefinedTerm"
+    },
+    "attributes" : [ "external" ],
+    "id" : "48"
   }, {
     "iri" : "http://w3id.org/halo/hallucination#instructionInconsistency",
     "baseIri" : "http://w3id.org/halo/hallucination",
@@ -233,42 +258,18 @@
       "IRI-based" : "instructionInconsistency",
       "undefined" : "instruction Inconsistency"
     },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/halo#instructionInconsistency_18_27",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "instructionInconsistency_18_27"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#instructionInconsistency_15_21",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "instructionInconsistency_15_21"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#instructionInconsistency_13_17",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "instructionInconsistency_13_17"
-      }
-    } ],
     "attributes" : [ "external" ],
-    "id" : "31",
-    "superClasses" : [ "18" ]
+    "id" : "61",
+    "superClasses" : [ "34" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "39",
+    "iri" : "https://schema.org/Number",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
     "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#date",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "7",
-    "label" : {
-      "IRI-based" : "date"
-    }
+      "IRI-based" : "Number"
+    },
+    "attributes" : [ "external" ],
+    "id" : "67"
   }, {
     "iri" : "http://w3id.org/halo/metadata#prompts",
     "baseIri" : "http://w3id.org/halo/metadata",
@@ -277,286 +278,8 @@
       "IRI-based" : "prompts",
       "undefined" : "prompts"
     },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/halo#prompt_01",
-      "baseIri" : "https://w3id.org/halo",
-      "annotations" : {
-        "associatedWithAnswer" : [ {
-          "identifier" : "associatedWithAnswer",
-          "language" : "undefined",
-          "value" : "https://w3id.org/halo#answer_01",
-          "type" : "iri"
-        }, {
-          "identifier" : "associatedWithAnswer",
-          "language" : "undefined",
-          "value" : "https://w3id.org/halo#answer_02",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "prompt_01"
-      }
-    } ],
     "attributes" : [ "external" ],
-    "id" : "6"
-  }, {
-    "iri" : "http://w3id.org/halo/hallucination#factualFabrication",
-    "baseIri" : "http://w3id.org/halo/hallucination",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "factualFabrication",
-      "undefined" : "Factual Fabrication"
-    },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/halo#factualfabrication_04_04",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_04_04"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_27_47",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_27_47"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_27_46",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_27_46"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_27_45",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_27_45"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_20_30",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_20_30"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_25_41",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_25_41"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_25_42",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_25_42"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_30_54",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_30_54"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_32_57",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_32_57"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_32_56",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_32_56"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_15_20",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_15_20"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_28_50",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_28_50"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_15_21",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_15_21"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_11_14",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_11_14"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_07_10",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_07_10"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_09_12",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_09_12"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_05_07",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_05_07"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_01_01",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_01_01"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_28_49",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_28_49"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_07_09",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_07_09"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_28_48",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_28_48"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_01_02",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_01_02"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_03_03",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_03_03"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_26_44",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_26_44"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_05_05",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_05_05"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_05_06",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_05_06"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_33_58",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_33_58"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_12_16",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_12_16"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_14_18",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_14_18"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_16_22",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_16_22"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_16_23",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_16_23"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_18_26",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_18_26"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_10_13",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_10_13"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_33_59",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_33_59"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_15_19",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_15_19"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_29_51",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_29_51"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_29_52",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_29_52"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_29_53",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_29_53"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_08_11",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_08_11"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_21_32",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_21_32"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualfabrication_21_33",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualfabrication_21_33"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "11",
-    "superClasses" : [ "8" ]
+    "id" : "4"
   }, {
     "iri" : "http://w3id.org/halo/metadata#largeLanguageModel",
     "baseIri" : "http://w3id.org/halo/metadata",
@@ -565,28 +288,18 @@
       "IRI-based" : "largeLanguageModel",
       "undefined" : "large Language Model"
     },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/halo#Claude",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "Claude"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#BARD",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "BARD"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#GPT-3.5",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "GPT-3.5"
-      }
-    } ],
     "attributes" : [ "external" ],
-    "id" : "16",
-    "superClasses" : [ "13" ]
+    "id" : "30",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://schema.org/Date",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Date"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10"
   }, {
     "iri" : "http://w3id.org/halo/hallucination#logicalInconsistency",
     "baseIri" : "http://w3id.org/halo/hallucination",
@@ -595,46 +308,9 @@
       "IRI-based" : "logicalInconsistency",
       "undefined" : "logical Inconsistency"
     },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/halo#logicalInconsistency_24_39",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "logicalInconsistency_24_39"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#logicalInconsistency_24_38",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "logicalInconsistency_24_38"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#logicalInconsistency_26_43",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "logicalInconsistency_26_43"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#logicalInconsistency_24_40",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "logicalInconsistency_24_40"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#logicalInconsistency_19_28",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "logicalInconsistency_19_28"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#logicalInconsistency_22_34",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "logicalInconsistency_22_34"
-      }
-    } ],
     "attributes" : [ "external" ],
-    "id" : "29",
-    "superClasses" : [ "18" ]
+    "id" : "33",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://w3id.org/halo/metadata#answers",
     "baseIri" : "http://w3id.org/halo/metadata",
@@ -643,121 +319,8 @@
       "IRI-based" : "answers",
       "undefined" : "answers"
     },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/halo#answer_01",
-      "baseIri" : "https://w3id.org/halo",
-      "annotations" : {
-        "isGeneratedBy" : [ {
-          "identifier" : "isGeneratedBy",
-          "language" : "undefined",
-          "value" : "https://w3id.org/halo#GPT-3.5",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "answer_01"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#answer_02",
-      "baseIri" : "https://w3id.org/halo",
-      "annotations" : {
-        "isGeneratedBy" : [ {
-          "identifier" : "isGeneratedBy",
-          "language" : "undefined",
-          "value" : "https://w3id.org/halo#Claude",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "answer_02"
-      }
-    } ],
     "attributes" : [ "external" ],
-    "id" : "1"
-  }, {
-    "iri" : "http://w3id.org/halo/hallucination#contextInconsistency",
-    "baseIri" : "http://w3id.org/halo/hallucination",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "contextInconsistency",
-      "undefined" : "context Inconsistency"
-    },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/halo#contextInconsistency_24_40",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "contextInconsistency_24_40"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#contextInconsistency_18_27",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "contextInconsistency_18_27"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#contextInconsistency_18_26",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "contextInconsistency_18_26"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#contextInconsistency_30_54",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "contextInconsistency_30_54"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#contextInconsistency_10_13",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "contextInconsistency_10_13"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#contextInconsistency_13_17",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "contextInconsistency_13_17"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#contextInconsistency_23_36",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "contextInconsistency_23_36"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#contextInconsistency_24_38",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "contextInconsistency_24_38"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#contextInconsistency_08_11",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "contextInconsistency_08_11"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#contextInconsistency_01_02",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "contextInconsistency_01_02"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#contextInconsistency_04_04",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "contextInconsistency_04_04"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#contextInconsistency_24_39",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "contextInconsistency_24_39"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "25",
-    "superClasses" : [ "18" ]
+    "id" : "25"
   }, {
     "iri" : "http://w3id.org/halo/hallucination#faithfulnessHallucination",
     "baseIri" : "http://w3id.org/halo/hallucination",
@@ -766,10 +329,199 @@
       "IRI-based" : "faithfulnessHallucination",
       "undefined" : "faithfulness Hallucination"
     },
-    "subClasses" : [ "31", "29", "25" ],
+    "subClasses" : [ "61", "33", "36" ],
     "attributes" : [ "external" ],
-    "id" : "18",
-    "superClasses" : [ "9" ]
+    "id" : "34",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "https://schema.org/ScholarlyArticle",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ScholarlyArticle"
+    },
+    "attributes" : [ "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://schema.org/actor",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "actor"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://w3id.org/halo/hallucination#LLMsHallucination",
+    "baseIri" : "http://w3id.org/halo/hallucination",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LLMsHallucination",
+      "undefined" : "L L Ms Hallucination"
+    },
+    "subClasses" : [ "34", "13" ],
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://schema.org/Article",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Article"
+    },
+    "attributes" : [ "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://schema.org/WebSite",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WebSite"
+    },
+    "attributes" : [ "external" ],
+    "id" : "93"
+  }, {
+    "iri" : "https://schema.org/Movie",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Movie"
+    },
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "instances" : 0,
+    "union" : [ "39", "93", "48", "18" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "96"
+  }, {
+    "instances" : 0,
+    "union" : [ "67", "39", "8" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "49"
+  }, {
+    "instances" : 0,
+    "union" : [ "5", "20", "27", "7", "12", "48", "2", "10", "18" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "121"
+  }, {
+    "instances" : 0,
+    "union" : [ "20", "5", "27", "12", "7", "2", "48", "10", "18" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "33", "61", "15", "36", "34", "16", "13" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "41",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://w3id.org/halo/hallucination#factualFabrication",
+    "baseIri" : "http://w3id.org/halo/hallucination",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "factualFabrication",
+      "undefined" : "Factual Fabrication"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "82",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "133",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "134",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "102",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "100",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://w3id.org/halo/hallucination#contextInconsistency",
+    "baseIri" : "http://w3id.org/halo/hallucination",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "contextInconsistency",
+      "undefined" : "context Inconsistency"
+    },
+    "attributes" : [ "external" ],
+    "id" : "36",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "135",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://schema.org/ShortStory",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ShortStory"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
   }, {
     "iri" : "http://w3id.org/halo/hallucination#factualInconsistency",
     "baseIri" : "http://w3id.org/halo/hallucination",
@@ -778,557 +530,981 @@
       "IRI-based" : "factualInconsistency",
       "undefined" : "factual Inconsistency"
     },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/halo#factualInconsistency_21_33",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_21_33"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_16_23",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_16_23"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_21_32",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_21_32"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_16_22",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_16_22"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_28_49",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_28_49"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_05_07",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_05_07"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_01_01",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_01_01"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_07_09",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_07_09"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_05_06",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_05_06"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_28_48",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_28_48"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_23_36",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_23_36"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_23_37",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_23_37"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_05_05",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_05_05"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_01_02",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_01_02"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_32_56",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_32_56"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_30_54",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_30_54"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_29_53",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_29_53"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_29_52",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_29_52"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_29_51",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_29_51"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_08_11",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_08_11"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_24_40",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_24_40"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_26_44",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_26_44"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_15_19",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_15_19"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_11_14",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_11_14"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_22_35",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_22_35"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_17_24",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_17_24"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_22_34",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_22_34"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_20_30",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_20_30"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_15_21",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_15_21"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_15_20",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_15_20"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_06_08",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_06_08"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_27_46",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_27_46"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_27_47",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_27_47"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_24_38",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_24_38"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_04_04",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_04_04"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_24_39",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_24_39"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_31_55",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_31_55"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_28_50",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_28_50"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_25_41",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_25_41"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_27_45",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_27_45"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_09_12",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_09_12"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_07_10",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_07_10"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_25_42",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_25_42"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_17_25",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_17_25"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_14_18",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_14_18"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_12_16",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_12_16"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_10_13",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_10_13"
-      }
-    }, {
-      "iri" : "https://w3id.org/halo#factualInconsistency_12_15",
-      "baseIri" : "https://w3id.org/halo",
-      "labels" : {
-        "IRI-based" : "factualInconsistency_12_15"
-      }
-    } ],
     "attributes" : [ "external" ],
-    "id" : "10",
-    "superClasses" : [ "8" ]
+    "id" : "15",
+    "superClasses" : [ "13" ]
   } ],
   "property" : [ {
     "id" : "0",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "3",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
   }, {
-    "id" : "5",
-    "type" : "owl:datatypeProperty"
+    "id" : "6",
+    "type" : "owl:disjointWith"
   }, {
-    "id" : "12",
-    "type" : "owl:datatypeProperty"
+    "id" : "9",
+    "type" : "owl:disjointWith"
   }, {
-    "id" : "15",
-    "type" : "owl:datatypeProperty"
+    "id" : "11",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "17",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "19",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "21",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "22",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "23",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "24",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "26",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "27",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "28",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
-    "id" : "30",
-    "type" : "rdfs:SubClassOf"
+    "id" : "29",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "32",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "33",
+    "id" : "35",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "34",
-    "type" : "owl:datatypeProperty"
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "40",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "41",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "42",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "43",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "44",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "45",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "46",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "47",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "51",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "52",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "53",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "54",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "58",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "66",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "68",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "69",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "70",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "71",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "72",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "73",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "74",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "75",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "76",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "77",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "78",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "79",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "80",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "84",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "85",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "86",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "87",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "88",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "89",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "90",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "91",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "92",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "94",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "104",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "105",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "106",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "107",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "108",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "109",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "110",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "111",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "112",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "115",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "116",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "117",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "118",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "119",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "120",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "123",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "124",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "125",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "126",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "127",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "128",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "129",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "130",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "131",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "132",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "136",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "137",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "144",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "145",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "146",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "147",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "148",
+    "type" : "owl:disjointWith"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "http://metadata.com#hasAnswerID",
-    "baseIri" : "http://metadata.com",
     "range" : "2",
-    "label" : {
-      "IRI-based" : "hasAnswerID",
-      "undefined" : "has answer i d"
-    },
     "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "0"
   }, {
-    "iri" : "http://metadata.com#hasAnswerDate",
-    "baseIri" : "http://metadata.com",
-    "range" : "4",
-    "label" : {
-      "IRI-based" : "hasAnswerDate",
-      "undefined" : "has answer date"
-    },
-    "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "3"
   }, {
-    "iri" : "http://metadata.com#collectedOn",
-    "baseIri" : "http://metadata.com",
     "range" : "7",
-    "label" : {
-      "IRI-based" : "collectedOn",
-      "undefined" : "collected on"
-    },
-    "domain" : "6",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "5"
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "6"
+  }, {
+    "range" : "10",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "9"
+  }, {
+    "range" : "12",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "11"
+  }, {
+    "range" : "18",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "range" : "20",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "1",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
   }, {
     "iri" : "http://metadata.com#type",
     "baseIri" : "http://metadata.com",
-    "range" : "14",
+    "range" : "23",
     "label" : {
       "IRI-based" : "type",
       "undefined" : "type"
     },
-    "domain" : "13",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "12"
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "22"
+  }, {
+    "range" : "5",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "27",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
   }, {
     "iri" : "http://metadata.com#modelName",
     "baseIri" : "http://metadata.com",
-    "range" : "17",
+    "range" : "31",
     "label" : {
       "IRI-based" : "modelName",
       "undefined" : "model name"
     },
-    "domain" : "16",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "15"
+    "domain" : "30",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "29"
+  }, {
+    "range" : "34",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "range" : "34",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
+  }, {
+    "range" : "14",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
   }, {
     "iri" : "http://metadata.com#wasAskedBy",
     "baseIri" : "http://metadata.com",
-    "range" : "20",
+    "range" : "41",
     "label" : {
       "IRI-based" : "wasAskedBy",
       "undefined" : "was asked by"
     },
-    "domain" : "20",
-    "attributes" : [ "object", "external" ],
-    "id" : "19"
+    "domain" : "41",
+    "attributes" : [ "external", "object" ],
+    "id" : "40"
   }, {
     "iri" : "http://metadata.com#hallucinationGeneratedBy",
     "baseIri" : "http://metadata.com",
-    "range" : "20",
+    "range" : "25",
     "label" : {
       "IRI-based" : "hallucinationGeneratedBy",
       "undefined" : "hallucination generated by"
     },
-    "domain" : "20",
-    "attributes" : [ "object", "external" ],
-    "id" : "21"
-  }, {
-    "iri" : "https://w3id.org/halo#associatedWithAnswer",
-    "baseIri" : "https://w3id.org/halo",
-    "range" : "1",
-    "label" : {
-      "IRI-based" : "associatedWithAnswer"
-    },
-    "domain" : "6",
-    "attributes" : [ "object" ],
-    "id" : "22"
-  }, {
-    "range" : "13",
-    "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "23"
+    "domain" : "43",
+    "attributes" : [ "external", "object" ],
+    "id" : "42"
   }, {
     "range" : "18",
     "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "24"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
   }, {
-    "range" : "9",
-    "domain" : "8",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "26"
+    "range" : "20",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
   }, {
-    "range" : "9",
-    "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "27"
+    "range" : "7",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
   }, {
-    "range" : "18",
-    "domain" : "29",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "28"
+    "iri" : "https://schema.org/logicalInconsistencyOn",
+    "baseIri" : "https://schema.org",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "logicalInconsistencyOn"
+    },
+    "domain" : "48",
+    "attributes" : [ "external", "object" ],
+    "id" : "47"
   }, {
-    "range" : "18",
-    "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "30"
+    "range" : "27",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
   }, {
-    "range" : "8",
-    "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "32"
+    "range" : "2",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
   }, {
-    "range" : "8",
-    "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "33"
+    "range" : "10",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "range" : "12",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "5",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "range" : "13",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "range" : "13",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "range" : "1",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "range" : "4",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "range" : "1",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "34",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "5",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
   }, {
     "iri" : "http://metadata.com#domain",
     "baseIri" : "http://metadata.com",
-    "range" : "35",
+    "range" : "64",
     "label" : {
       "IRI-based" : "domain",
       "undefined" : "domain"
     },
-    "domain" : "13",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "34"
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "63"
   }, {
-    "iri" : "http://metadata.com#model",
-    "baseIri" : "http://metadata.com",
-    "range" : "38",
-    "label" : {
-      "IRI-based" : "model",
-      "undefined" : "model"
-    },
-    "domain" : "16",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "40"
+    "range" : "20",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
   }, {
-    "iri" : "http://metadata.com#aiName",
-    "baseIri" : "http://metadata.com",
-    "range" : "39",
-    "label" : {
-      "IRI-based" : "aiName",
-      "undefined" : "ai name"
-    },
-    "domain" : "13",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "41"
+    "range" : "10",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
   }, {
-    "iri" : "http://metadata.com#hasPromptId",
-    "baseIri" : "http://metadata.com",
-    "range" : "36",
-    "label" : {
-      "IRI-based" : "hasPromptId",
-      "undefined" : "has prompt id"
-    },
-    "domain" : "6",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "42"
+    "range" : "20",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "range" : "10",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "range" : "7",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  }, {
+    "range" : "18",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "range" : "7",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "range" : "18",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
+  }, {
+    "range" : "12",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "range" : "5",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "range" : "20",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
+  }, {
+    "range" : "10",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "77"
+  }, {
+    "range" : "12",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "range" : "7",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "range" : "18",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
   }, {
     "iri" : "http://metadata.com#hasSource",
     "baseIri" : "http://metadata.com",
-    "range" : "37",
+    "range" : "82",
     "label" : {
       "IRI-based" : "hasSource",
       "undefined" : "has source"
     },
-    "domain" : "6",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "43"
+    "domain" : "4",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "81"
+  }, {
+    "range" : "27",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "range" : "5",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "range" : "12",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "range" : "27",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "range" : "20",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
+  }, {
+    "range" : "10",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "88"
+  }, {
+    "range" : "39",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "89"
+  }, {
+    "range" : "67",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "range" : "8",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "91"
+  }, {
+    "range" : "93",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92"
+  }, {
+    "range" : "8",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "94"
+  }, {
+    "iri" : "https://schema.org/contextInconsistencyOn",
+    "baseIri" : "https://schema.org",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "contextInconsistencyOn"
+    },
+    "domain" : "36",
+    "attributes" : [ "external", "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://metadata.com#hasAnswerID",
+    "baseIri" : "http://metadata.com",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "hasAnswerID",
+      "undefined" : "has answer i d"
+    },
+    "domain" : "25",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://metadata.com#hasAnswerDate",
+    "baseIri" : "http://metadata.com",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "hasAnswerDate",
+      "undefined" : "has answer date"
+    },
+    "domain" : "25",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://metadata.com#collectedOn",
+    "baseIri" : "http://metadata.com",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "collectedOn",
+      "undefined" : "collected on"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "101"
+  }, {
+    "range" : "93",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "103"
+  }, {
+    "range" : "39",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "range" : "5",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
+    "range" : "5",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "106"
+  }, {
+    "range" : "67",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "107"
+  }, {
+    "range" : "48",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "108"
+  }, {
+    "range" : "7",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "range" : "18",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "range" : "7",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "range" : "5",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "112"
+  }, {
+    "iri" : "https://w3id.org/halo#associatedWithAnswer",
+    "baseIri" : "https://w3id.org/halo",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "associatedWithAnswer"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "113"
+  }, {
+    "range" : "7",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "114"
+  }, {
+    "range" : "18",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "115"
+  }, {
+    "range" : "5",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116"
+  }, {
+    "range" : "7",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "range" : "18",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "range" : "20",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "range" : "5",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "range" : "1",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "2",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "range" : "27",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "range" : "12",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "126"
+  }, {
+    "range" : "10",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  }, {
+    "range" : "20",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "128"
+  }, {
+    "range" : "18",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129"
+  }, {
+    "range" : "7",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "130"
+  }, {
+    "range" : "25",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131"
+  }, {
+    "range" : "4",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "132"
+  }, {
+    "range" : "8",
+    "domain" : "93",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://metadata.com#model",
+    "baseIri" : "http://metadata.com",
+    "range" : "134",
+    "label" : {
+      "IRI-based" : "model",
+      "undefined" : "model"
+    },
+    "domain" : "30",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "137"
+  }, {
+    "iri" : "https://schema.org/factualFabricateOn",
+    "baseIri" : "https://schema.org",
+    "range" : "122",
+    "label" : {
+      "IRI-based" : "factualFabricateOn"
+    },
+    "domain" : "16",
+    "attributes" : [ "external", "object" ],
+    "id" : "138"
+  }, {
+    "iri" : "https://schema.org/factualInconsistencyOn",
+    "baseIri" : "https://schema.org",
+    "range" : "121",
+    "label" : {
+      "IRI-based" : "factualInconsistencyOn"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "object" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://metadata.com#aiName",
+    "baseIri" : "http://metadata.com",
+    "range" : "135",
+    "label" : {
+      "IRI-based" : "aiName",
+      "undefined" : "ai name"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "140"
+  }, {
+    "iri" : "https://schema.org/instructionInconsistency",
+    "baseIri" : "https://schema.org",
+    "range" : "93",
+    "label" : {
+      "IRI-based" : "instructionInconsistency"
+    },
+    "domain" : "61",
+    "attributes" : [ "external", "object" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://metadata.com#hasPromptId",
+    "baseIri" : "http://metadata.com",
+    "range" : "133",
+    "label" : {
+      "IRI-based" : "hasPromptId",
+      "undefined" : "has prompt id"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "142"
+  }, {
+    "range" : "8",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "143"
+  }, {
+    "range" : "93",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "144"
+  }, {
+    "range" : "39",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "145"
   }, {
     "iri" : "https://w3id.org/halo#isGeneratedBy",
     "baseIri" : "https://w3id.org/halo",
-    "range" : "16",
+    "range" : "30",
     "label" : {
       "IRI-based" : "isGeneratedBy"
     },
-    "domain" : "1",
+    "domain" : "25",
     "attributes" : [ "object" ],
-    "id" : "44"
+    "id" : "146"
+  }, {
+    "range" : "93",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "147"
+  }, {
+    "range" : "8",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "148"
   } ]
 }
